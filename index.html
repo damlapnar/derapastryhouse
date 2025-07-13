@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="D'era Pastry House - Turkish pastries, custom cakes, Clifton NJ bakery"/>
+  <title>D'era Pastry House | Clifton, NJ Bakery</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>D'era Pastry House</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#location">Find Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Delicious treats, baked with love</h2>
+    <p>From cakes to cookies, every bite is handmade in Clifton, NJ.</p>
+    <p><a href="https://derapastryhouse.square.site/?location_id=L59N5AX7W01CQ&fulfillment=PICKUP#XODCGZWCOKFEDI5XSF5N5F5U" target="_blank">🛒 Online Ödeme için Tıklayın</a></p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>D’era Pastry House was born out of a deep love for baking and sharing joy through flavor. Located in Clifton, NJ, we specialize in Turkish pastries, modern cakes, and custom creations — crafted with care and precision in every batch.</p>
+  </section>
+
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <ul>
+      <li>Chocolate Chip Cookies - $2.50</li>
+      <li>Red Velvet Cupcake - $3.00</li>
+      <li>Custom Birthday Cake - from $45</li>
+      <li>Baklava (Turkish Style) - $4.00</li>
+      <li>Fruit Tart - $4.50</li>
+    </ul>
+  </section>
+
+  <section id="order">
+    <h2>Place an Order</h2>
+    <form action="https://formspree.io/f/mnqegzlk" method="POST">
+      <label>Name: <input type="text" name="name" required></label><br>
+      <label>Phone Number: <input type="tel" name="phone" required></label><br>
+      <label>Email: <input type="email" name="email" required></label><br>
+      <label>Product:
+        <select name="product" required>
+          <option value="Chocolate Chip Cookies">Chocolate Chip Cookies</option>
+          <option value="Red Velvet Cupcake">Red Velvet Cupcake</option>
+          <option value="Custom Birthday Cake">Custom Birthday Cake</option>
+          <option value="Baklava">Baklava</option>
+          <option value="Fruit Tart">Fruit Tart</option>
+        </select>
+      </label><br>
+      <label>Quantity: <input type="number" name="quantity" min="1" required></label><br>
+      <label>Special Requests: <textarea name="message"></textarea></label><br>
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Example pastry images coming soon!</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></p>
+    <p>Phone: <a href="tel:+12019239776">(201) 923-9776</a></p>
+    <p>Instagram: <a href="https://instagram.com/derapastryhouse" target="_blank">@derapastryhouse</a></p>
+  </section>
+
+  <section id="location">
+    <h2>Find Us</h2>
+    <p>Visit us at: 1076 Main Ave, Clifton, NJ 07011</p>
+    <iframe src="https://www.google.com/maps?q=1076+Main+Ave,+Clifton,+NJ+07011&output=embed" width="100%" height="300" frameborder="0" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 D'era Pastry House. All rights reserved.</p>
+  </footer>
+</body>
+</html>
