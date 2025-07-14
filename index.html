@@ -3,91 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="D’era Pastry House – Boutique desserts with a personal touch in Clifton, NJ." />
-  <title>D’era Pastry House</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <script defer src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta name="description" content="D'era Pastry House - Fresh, handcrafted desserts made with love.">
+  <title>D'era Pastry House | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-overlay">
-      <h1 class="hero-title">D'era Pastry House</h1>
-      <p class="hero-subtitle">Boutique Pastries. Clifton Style.</p>
-      <a href="#menu" class="btn-primary">Explore Menu</a>
+  <header>
+    <div class="nav-container">
+      <div class="logo">D’ERA</div>
+      <nav>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="https://derapastryhouse.square.site" class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
     </div>
   </header>
 
-  <nav class="site-nav">
-    <ul class="nav-menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#menu">Menu</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="section" id="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>At D’era Pastry House, we craft desserts that echo refinement, warmth, and authenticity. Inspired by European classics and Middle Eastern flair, our pastries are thoughtfully made for modern palettes. Whether you’re treating yourself or hosting guests, our creations blend charm with a sense of place — right here in Clifton, NJ.</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Handcrafted Pastries, Made Daily</h1>
+      <p>Delicious treats, fresh ingredients, baked with love.</p>
+      <a href="https://derapastryhouse.square.site" class="btn-primary" target="_blank">Browse Menu</a>
     </div>
   </section>
 
-  <section class="section" id="menu">
-    <div class="container">
-      <h2>Menu</h2>
-      <div class="product-grid">
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0" alt="Baklava">
-          <h3>Baklava</h3>
-          <p>Rich layers of filo, nuts & honey syrup.</p>
-          <span class="price">$4.50</span>
-          <a class="order-btn" href="#">Order</a>
-        </div>
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1583338917451-face2751d8d5" alt="Revani">
-          <h3>Revani</h3>
-          <p>Syrupy semolina cake with lemon zest.</p>
-          <span class="price">$3.90</span>
-          <a class="order-btn" href="#">Order</a>
-        </div>
-        <div class="product-card">
-          <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43" alt="Künefe">
-          <h3>Künefe</h3>
-          <p>Sweet cheese pastry with pistachio top.</p>
-          <span class="price">$6.50</span>
-          <a class="order-btn" href="#">Order</a>
-        </div>
+  <section class="features">
+    <h2>Our Specialties</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="images/cakes.jpg" alt="Cakes" />
+        <p>Cakes</p>
+      </div>
+      <div class="product-item">
+        <img src="images/cookies.jpg" alt="Cookies" />
+        <p>Cookies</p>
+      </div>
+      <div class="product-item">
+        <img src="images/baklava.jpg" alt="Baklava" />
+        <p>Baklava</p>
       </div>
     </div>
   </section>
 
-  <section class="section" id="gallery">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery">
-        <img src="https://plus.unsplash.com/premium_photo-1665669263531-cdcbe18e7fe4" alt="Pastry Display 1" />
-        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e" alt="Pastry Display 2" />
-        <img src="https://plus.unsplash.com/premium_photo-1681506439686-3aa1a78d7125" alt="Pastry Display 3" />
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Be the first to know about new arrivals and special offers.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-columns">
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Returns</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <section class="section" id="contact">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></p>
-      <p>Phone: <a href="tel:+12019239776">(201) 923‑9776</a></p>
-      <p>Instagram: <a href="https://instagram.com/deraclifton" target="_blank">@deraclifton</a></p>
-      <a class="btn-primary" target="_blank" href="https://squareup.com/appointments/book/cw5nsmtn0qjdxm/LBJ4CWC1YRZ7Y/services">Order Online via Square</a>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 D'era Pastry House. All rights reserved.</p>
-    </div>
+    <p class="footer-copy">&copy; 2025 D’era Pastry House. All rights reserved.</p>
   </footer>
 </body>
 </html>
