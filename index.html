@@ -1,170 +1,80 @@
-:root {
-  --primary-color: #004b6b;
-  --secondary-color: #cfe8f9;
-  --font-main: 'Open Sans', sans-serif;
-  --font-heading: 'Playfair Display', serif;
-  --text-color: #2c2c2c;
-  --background-color: #f4f8fb;
-  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  --radius: 10px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="D’era Pastry House – Handcrafted pastries with heart.">
+  <title>D’era Pastry House</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">D’era Pastry House</h1>
+      <p class="site-tagline">Where Every Pastry Tells a Story</p>
+    </div>
+  </header>
 
-body {
-  font-family: var(--font-main);
-  background-color: var(--background-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
+  <nav class="site-nav">
+    <ul class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-.container {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 1.25rem;
-}
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>At D’era Pastry House, we believe every dessert should tell a story. With a commitment to quality and craft, we offer a curated selection of handmade pastries that blend time-honored techniques with a modern touch. From our kitchen in Clifton, NJ, we serve our community with warmth, integrity, and a passion for excellence. Whether you're picking up a treat for yourself or ordering for a special event, our goal is to make every bite memorable.</p>
+    </div>
+  </section>
 
-header.site-header {
-  background-color: white;
-  padding: 2.5rem 0;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-}
+  <section class="section" id="menu">
+    <div class="container">
+      <h2>Menu</h2>
+      <ul class="menu-list">
+        <li>Revani</li>
+        <li>Baklava</li>
+        <li>Künefe</li>
+        <li>Sütlaç</li>
+        <li>Poğaça</li>
+        <li>Tiramisu</li>
+      </ul>
+    </div>
+  </section>
 
-.site-title {
-  font-size: 2.8rem;
-  font-family: var(--font-heading);
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
+  <section class="section" id="gallery">
+    <div class="container">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://plus.unsplash.com/premium_photo-1665669263531-cdcbe18e7fe4?q=80&w=1850&auto=format&fit=crop" alt="Pastry Display 1">
+        <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=2070&auto=format&fit=crop" alt="Pastry Display 2">
+        <img src="https://images.unsplash.com/photo-1583338917451-face2751d8d5?q=80&w=774&auto=format&fit=crop" alt="Pastry Display 3">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=774&auto=format&fit=crop" alt="Pastry Display 4">
+        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=1740&auto=format&fit=crop" alt="Pastry Display 5">
+      </div>
+    </div>
+  </section>
 
-.site-tagline {
-  font-size: 1.1rem;
-  color: #666;
-}
+  <section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></p>
+      <p>Phone: <a href="tel:+12019239776">(201) 923‑9776</a></p>
+      <p>Instagram: <a href="https://instagram.com/deraclifton" target="_blank">@deraclifton</a></p>
+      <a class="order-btn" href="#">Order Online</a>
+    </div>
+  </section>
 
-nav.site-nav {
-  background-color: var(--secondary-color);
-  padding: 0.75rem 0;
-}
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 D’era Pastry House. All rights reserved.</p>
+    </div>
+  </footer>
 
-.nav-menu {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-weight: bold;
-  font-size: 1rem;
-  transition: color 0.2s;
-}
-
-.nav-menu a:hover {
-  color: #000;
-}
-
-.section {
-  padding: 3rem 0;
-}
-
-h2 {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-p {
-  margin-bottom: 1.2rem;
-}
-
-.menu-list {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-.menu-list li {
-  margin-bottom: 0.5rem;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.25rem;
-}
-
-.gallery img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transition: transform 0.3s ease-in-out;
-}
-
-.gallery img:hover {
-  transform: scale(1.03);
-}
-
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.order-btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  margin-top: 1rem;
-  background-color: var(--primary-color);
-  color: white;
-  font-weight: bold;
-  border-radius: var(--radius);
-  transition: background-color 0.3s ease;
-}
-
-.order-btn:hover {
-  background-color: #002f46;
-}
-
-footer.site-footer {
-  background-color: var(--secondary-color);
-  text-align: center;
-  padding: 2rem 0;
-  font-size: 0.9rem;
-  color: #444;
-}
-
-/* Mobile Responsive */
-@media (max-width: 600px) {
-  .nav-menu {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .gallery {
-    gap: 0.75rem;
-  }
-
-  .site-title {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-}
+</body>
+</html>
