@@ -4,67 +4,114 @@
   <meta charset="UTF-8">
   <title>D'era Pastry House</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <meta name="description" content="Handmade Turkish Desserts in Clifton, NJ - Premium pastries, cakes and sweets.">
+  <meta name="keywords" content="Pastry, Bakery, Turkish Desserts, Clifton NJ, D'era">
+  <meta name="author" content="D'era Pastry House">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans&display=swap">
   <style>
+    :root {
+      --primary-color: #004b6b;
+      --secondary-color: #cfe8f9;
+      --font-main: 'Open Sans', sans-serif;
+      --font-heading: 'Playfair Display', serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
-      font-family: 'Open Sans', sans-serif;
+      font-family: var(--font-main);
       background-color: #f4f8fb;
       color: #2c2c2c;
-      margin: 0;
+      line-height: 1.6;
     }
+
     header {
       background-color: #ffffff;
-      padding: 30px;
+      padding: 2rem 1rem;
       text-align: center;
       border-bottom: 1px solid #ddd;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-family: var(--font-heading);
+      color: var(--primary-color);
+    }
+
     nav {
-      background-color: #cfe8f9;
+      background-color: var(--secondary-color);
       text-align: center;
-      padding: 10px;
+      padding: 0.75rem;
     }
+
     nav a {
-      margin: 0 15px;
+      margin: 0 1rem;
       text-decoration: none;
-      color: #004b6b;
+      color: var(--primary-color);
       font-weight: bold;
+      transition: color 0.2s;
     }
+
+    nav a:hover {
+      color: #000;
+    }
+
     .section {
       max-width: 1100px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 3rem 1.25rem;
     }
+
     h2 {
-      font-family: 'Playfair Display', serif;
-      color: #004b6b;
-      font-size: 2.5em;
+      font-family: var(--font-heading);
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
+
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      gap: 1.25rem;
     }
+
     .gallery img {
+      width: 100%;
       aspect-ratio: 4 / 3;
       object-fit: cover;
-      width: 100%;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
     }
+
     .gallery img:hover {
       transform: scale(1.03);
     }
+
     @media (max-width: 600px) {
       .gallery {
-        gap: 10px;
-        padding: 10px;
+        gap: 0.75rem;
+        padding: 0 0.5rem;
       }
     }
+
     footer {
-      background-color: #cfe8f9;
+      background-color: var(--secondary-color);
       text-align: center;
-      padding: 30px;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--primary-color);
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -73,33 +120,40 @@
     <h1>D'era Pastry House</h1>
     <p>Clifton, NJ - Handmade Turkish Desserts</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#menu">Menu</a>
     <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
-  <div class="section" id="about">
-    <h2>About Us</h2>
-    <p>We specialize in premium handmade pastries, cakes, and traditional Turkish desserts. Located in Clifton, New Jersey, we combine tradition with innovation to bring joy in every bite.</p>
-  </div>
-  <div class="section" id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://plus.unsplash.com/premium_photo-1665669263531-cdcbe18e7fe4?q=80&w=1850&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pastry Display 1">
-      <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pastry Display 2">
-      <img src="https://images.unsplash.com/photo-1583338917451-face2751d8d5?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pastry Display 3">
-      <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pastry Display 4">
-      <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pastry Display 5">
-    </div>
-  </div>
-  <div class="section" id="contact">
-    <h2>Contact</h2>
-    <p>Email: deragroupllc@gmail.com</p>
-    <p>Phone: (201) 923-9776</p>
-    <p>Instagram: <a href="https://instagram.com/deraclifton" target="_blank">@deraclifton</a></p>
-    <p><a href="https://derapastryhouse.square.site/?location_id=L59N5AX7W01CQ&fulfillment=PICKUP#XODCGZWCOKFEDI5XSF5N5F5U" target="_blank">Order Online</a></p>
-  </div>
+
+  <main>
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <p>We specialize in premium handmade pastries, cakes, and traditional Turkish desserts. Located in Clifton, New Jersey, we combine tradition with innovation to bring joy in every bite.</p>
+    </section>
+
+    <section class="section" id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://plus.unsplash.com/premium_photo-1665669263531-cdcbe18e7fe4?q=80&w=1850&auto=format&fit=crop" alt="Pastry Display 1">
+        <img src="https://images.unsplash.com/photo-1483695028939-5bb13f8648b0?q=80&w=2070&auto=format&fit=crop" alt="Pastry Display 2">
+        <img src="https://images.unsplash.com/photo-1583338917451-face2751d8d5?q=80&w=774&auto=format&fit=crop" alt="Pastry Display 3">
+        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=774&auto=format&fit=crop" alt="Pastry Display 4">
+        <img src="https://images.unsplash.com/photo-1569864358642-9d1684040f43?q=80&w=1740&auto=format&fit=crop" alt="Pastry Display 5">
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></p>
+      <p>Phone: <a href="tel:+12019239776">(201) 923-9776</a></p>
+      <p>Instagram: <a href="https://instagram.com/deraclifton" target="_blank">@deraclifton</a></p>
+      <p><a href="https://derapastryhouse.square.site/?location_id=L59N5AX7W01CQ&fulfillment=PICKUP" target="_blank">Order Online</a></p>
+    </section>
+  </main>
+
   <footer>
     &copy; 2025 D'era Pastry House. All rights reserved.
   </footer>
