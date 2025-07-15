@@ -157,6 +157,12 @@ p {
   margin-bottom: 0.8rem;
 }
 
+/* PRODUCT PAGE WRAPPER */
+.product-page {
+  padding: 2rem;
+  background-color: #fffdf9;
+}
+
 /* NEWSLETTER / FORMS */
 .newsletter, .contact-form {
   text-align: center;
@@ -189,22 +195,6 @@ button {
 
 button:hover {
   background-color: #b08360;
-}
-
-/* CONTACT INFO */
-.contact-details p, .location-box p {
-  margin-bottom: 0.5rem;
-}
-
-.contact-details a {
-  color: #5a3e36;
-  text-decoration: underline;
-}
-
-/* MAP */
-.map-embed {
-  margin: 2rem auto;
-  max-width: 800px;
 }
 
 /* FOOTER */
