@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #3a3a3a;
-  background-color: #fffdf9;
+  color: #ffffff;
+  background-color: #2671c0;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -17,7 +17,7 @@ body {
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 0.5em;
-  color: #4b2e2e;
+  color: #ffffff;
 }
 
 h1 {
@@ -40,6 +40,7 @@ h3 {
 p {
   font-size: 1rem;
   margin-bottom: 1rem;
+  color: #f0f8ff;
 }
 
 /* NAVIGATION */
@@ -48,15 +49,15 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
-  background-color: #f6eee4;
-  border-bottom: 1px solid #e1d8c8;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
 }
 
 .nav-container .logo {
   font-size: 1.8rem;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  color: #5a3e36;
+  color: #2671c0;
 }
 
 .nav-container nav ul {
@@ -67,17 +68,17 @@ p {
 
 .nav-container nav ul li a {
   text-decoration: none;
-  color: #5a3e36;
+  color: #2671c0;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 .nav-container nav ul li a:hover {
-  color: #b08360;
+  color: #1451a3;
 }
 
 .cta {
-  background-color: #d6a77a;
+  background-color: #2671c0;
   color: white;
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
@@ -87,20 +88,15 @@ p {
 }
 
 .cta:hover {
-  background-color: #b08360;
+  background-color: #1451a3;
 }
 
 /* HERO */
 .hero {
-  background-image: url('https://images.unsplash.com/photo-1528591922185-a0eb2f8f50b6?q=80&w=1740&auto=format&fit=crop');
-  background-size: cover;
-  background-position: center;
-  height: 65vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #1451a3;
   color: white;
   text-align: center;
+  padding: 4rem 2rem;
 }
 
 .hero-text h1 {
@@ -113,9 +109,10 @@ p {
   margin-bottom: 1.5rem;
 }
 
+/* BUTTON */
 .btn-primary {
-  background-color: #d6a77a;
-  color: white;
+  background-color: #ffffff;
+  color: #2671c0;
   padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 10px;
@@ -125,7 +122,7 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #b08360;
+  background-color: #f0f0f0;
 }
 
 /* PRODUCT GRID */
@@ -137,12 +134,13 @@ p {
 }
 
 .product-item {
-  background-color: #fff8ef;
+  background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s;
+  color: #2671c0;
 }
 
 .product-item:hover {
@@ -157,17 +155,18 @@ p {
   margin-bottom: 0.8rem;
 }
 
-/* PRODUCT PAGE WRAPPER */
-.product-page {
+/* PAGE WRAPPER */
+.product-page, .contact-page, .locations-page {
   padding: 2rem;
-  background-color: #fffdf9;
+  background-color: #2671c0;
 }
 
-/* NEWSLETTER / FORMS */
+/* FORMS */
 .newsletter, .contact-form {
   text-align: center;
   padding: 2rem;
-  background-color: #fef4e8;
+  background-color: #ffffff;
+  color: #2671c0;
 }
 
 form {
@@ -186,7 +185,7 @@ input, textarea, button {
 }
 
 button {
-  background-color: #d6a77a;
+  background-color: #2671c0;
   color: white;
   border: none;
   cursor: pointer;
@@ -194,15 +193,15 @@ button {
 }
 
 button:hover {
-  background-color: #b08360;
+  background-color: #1451a3;
 }
 
 /* FOOTER */
 footer {
-  background-color: #f6eee4;
+  background-color: #ffffff;
   padding: 2rem;
   font-size: 0.9rem;
-  color: #5a3e36;
+  color: #2671c0;
 }
 
 .footer-columns {
@@ -232,7 +231,7 @@ footer {
 }
 
 .footer-columns ul li a {
-  color: #5a3e36;
+  color: #2671c0;
   text-decoration: none;
 }
 
