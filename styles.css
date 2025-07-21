@@ -243,3 +243,39 @@ footer {
   text-align: center;
   margin-top: 1rem;
 }
+
+/* ==================== YENİ EKLEMELER ==================== */
+
+/* ABOUT PAGE LAYOUT */
+.about-page {
+  padding: 2rem;
+  background-color: #2671c0;
+}
+
+.about-page section {
+  background-color: #ffffff;
+  color: #2671c0;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-page h1,
+.about-page h2,
+.about-page p {
+  color: #2671c0;
+}
+
+/* FOUNDER IMAGE */
+.team-photo {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.team-photo img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
