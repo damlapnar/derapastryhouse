@@ -57,7 +57,7 @@
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
-      <form action="https://formspree.io/f/moqgpeqr" method="POST">
+      <form>
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Your name" required />
 
@@ -95,19 +95,5 @@
     </div>
     <p class="footer-copy">&copy; 2025 D’era Pastry House. All rights reserved.</p>
   </footer>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-    if (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault(); // Stop real submission for now
-        alert("Thank you! Your message has been sent successfully.");
-        form.reset();
-      });
-    }
-  });
-</script>
-
 </body>
 </html>
