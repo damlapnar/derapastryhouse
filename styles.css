@@ -1,3 +1,5 @@
+/* styles.css - Güncel Tüm Stil Tanımları */
+
 /* RESET */
 * {
   margin: 0;
@@ -316,7 +318,6 @@ footer {
   color: #2671c0;
 }
 
-/* === Hover Effect === */
 .product-card:hover {
   transform: scale(1.02);
 }
