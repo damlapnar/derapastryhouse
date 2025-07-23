@@ -21,6 +21,42 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <style>
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1682313052653-afda6f9eb5f6?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-text p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -39,6 +75,13 @@
       <a href="https://derapastryhouse.square.site" class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
     </div>
   </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      From Passion to Pastry
+      <p>Discover the story behind our handcrafted desserts.</p>
+    </div>
+  </section>
 
   <main class="about-page">
     <section class="intro">
@@ -101,6 +144,5 @@
       &copy; 2025 D’era Pastry House. Handcrafted with heart in Clifton, NJ.
     </div>
   </footer>
-
 </body>
 </html>
