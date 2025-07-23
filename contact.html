@@ -76,6 +76,11 @@
 
         <button type="submit">Send</button>
       </form>
+
+      <!-- Success message -->
+      <div id="formSuccess" style="display: none; color: green; margin-top: 1rem;">
+        Thank you! Your message has been sent.
+      </div>
     </section>
   </main>
 
@@ -106,6 +111,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       const form = document.getElementById("contactForm");
+      const successMessage = document.getElementById("formSuccess");
 
       form.addEventListener("submit", function (e) {
         e.preventDefault();
@@ -120,7 +126,8 @@
         })
         .then(response => {
           if (response.ok) {
-            window.location.href = "thankyou.html";  // Buraya yönlendirme yapılacak
+            form.reset();
+            successMessage.style.display = "block";
           } else {
             alert("Something went wrong. Please try again.");
           }
