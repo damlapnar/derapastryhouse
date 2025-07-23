@@ -1,0 +1,3 @@
+setup:
+  script: |
+    echo "No setup needed — static HTML site"
