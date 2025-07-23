@@ -74,6 +74,12 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Your message..." required></textarea>
 
+        <!-- Honeypot Field -->
+        <input type="text" name="_honey" style="display:none" />
+
+        <!-- Time-based Field -->
+        <input type="hidden" name="form-start" id="form-start" />
+
         <button type="submit">Send</button>
       </form>
 
@@ -113,10 +119,24 @@
       const form = document.getElementById("contactForm");
       const successMessage = document.getElementById("formSuccess");
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
+      // Set timestamp
+      document.getElementById("form-start").value = Date.now();
 
+      form.addEventListener("submit", function (e) {
+        // Time-based spam protection
+        const start = parseInt(document.getElementById("form-start").value);
+        const now = Date.now();
+        const diff = (now - start) / 1000;
+
+        if (diff < 5) {
+          e.preventDefault();
+          alert("Please take a moment before submitting the form 😊");
+          return;
+        }
+
+        e.preventDefault();
         const formData = new FormData(form);
+
         fetch(form.action, {
           method: "POST",
           body: formData,
