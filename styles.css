@@ -391,3 +391,38 @@ form button:hover {
   font-size: 1.2rem;
   margin-top: 0;
 }
+
+/* styles.css - Güncel Tüm Stil Tanımları */
+/* ... senin mevcut kodların ... */
+
+/* Form başarı mesajı */
+#formSuccess {
+  color: green;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: #e7fbe7;
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid #88cc88;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Formun bulunduğu alan için kutu efekti */
+.contact-form form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Buton hover efekti */
+.contact-form button:hover {
+  background-color: #145ea8;
+  transition: background-color 0.3s ease;
+}
+
