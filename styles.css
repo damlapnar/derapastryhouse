@@ -455,6 +455,30 @@ button:hover {
     text-align: center;
   }
 }
+/* ✅ Fix: Prevent mobile overflow on navbar */
+body, html {
+  overflow-x: hidden;
+}
+
+.nav-container {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.nav-container nav ul {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-container nav ul li a {
+  text-align: center;
+}
+
+.cta {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+}
 
 @media (max-width: 480px) {
   h1 { font-size: 1.8rem; }
