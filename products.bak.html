@@ -22,6 +22,41 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
+
+  <style>
+    .coming-soon {
+      text-align: center;
+      padding: 120px 20px;
+      color: #333;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .coming-soon h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: #2671c0;
+      margin-bottom: 20px;
+    }
+
+    .coming-soon p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    @media (max-width: 768px) {
+      .coming-soon {
+        padding: 100px 30px;
+      }
+
+      .coming-soon h2 {
+        font-size: 2rem;
+      }
+
+      .coming-soon p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -30,7 +65,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -42,25 +77,11 @@
   <main class="product-page">
     <section id="our-products">
       <div class="container">
-        <h2>Our Products</h2>
-
-        <!-- Ice Cream -->
-        <!-- ... Ice Cream products go here ... -->
-
-        <!-- Single Cakes -->
-        <!-- ... Single Cake products go here ... -->
-
-        <!-- Birthday Cakes -->
-        <!-- ... Birthday Cake products go here ... -->
-
-        <!-- Chocolate -->
-        <!-- ... Chocolate products go here ... -->
-
-        <!-- Panini -->
-        <!-- ... Panini products go here ... -->
-
-        <!-- Beverages -->
-        <!-- ... Beverage products go here ... -->
+        <div class="coming-soon">
+          <h2>Coming Soon</h2>
+          <p>We’re crafting something sweet and special for you.<br>
+          Please check back soon to explore our delicious handmade treats!</p>
+        </div>
       </div>
     </section>
   </main>
