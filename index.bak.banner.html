@@ -3,47 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Products | D’era Pastry House</title>
-  <meta name="description" content="Discover our handcrafted pastries, cakes, chocolates, paninis, and beverages freshly made at D’era Pastry House in Clifton, NJ." />
-  <meta name="keywords" content="pastry, bakery, desserts, Clifton NJ, handmade cakes, ice cream, chocolate, panini, D’era Pastry House" />
+
+  <title>D’era Pastry House | Authentic Turkish Bakery in Clifton, NJ</title>
+  <meta name="description" content="Welcome to D’era Pastry House – a women-owned Turkish bakery in Clifton, NJ. Discover handcrafted baklava, cookies, cakes, and desserts made with love." />
+  <meta name="keywords" content="Turkish bakery, Clifton NJ bakery, baklava, handmade desserts, cakes, cookies, D’era Pastry House" />
   <meta name="author" content="D’era Pastry House" />
 
-  <meta property="og:title" content="Our Products | D’era Pastry House" />
-  <meta property="og:description" content="Explore D’era’s delightful range of pastries, cakes, and beverages." />
+  <meta property="og:title" content="D’era Pastry House | Turkish Bakery in Clifton, NJ" />
+  <meta property="og:description" content="Freshly baked Turkish sweets and pastries – order online or visit our Clifton location today!" />
   <meta property="og:image" content="https://derapastryhouse.com/images/og-image.jpg" />
-  <meta property="og:url" content="https://derapastryhouse.com/products.html" />
+  <meta property="og:url" content="https://derapastryhouse.com/" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="keywords" content="pastry, bakery, cakes, cookies, baklava, Clifton NJ, D’era">
+  <meta name="author" content="D’era Pastry House">
+
+  <meta property="og:title" content="D’era Pastry House" />
+  <meta property="og:description" content="Handcrafted pastries made daily with love in Clifton, NJ." />
+  <meta property="og:image" content="https://derapastryhouse.com/images/og-image.jpg" />
+  <meta property="og:url" content="https://derapastryhouse.com" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Our Products | D’era Pastry House">
-  <meta name="twitter:description" content="Discover handcrafted desserts and beverages made fresh daily in Clifton, NJ.">
+  <meta name="twitter:title" content="D’era Pastry House">
+  <meta name="twitter:description" content="Fresh handmade pastries in Clifton, NJ. Order now!">
   <meta name="twitter:image" content="https://derapastryhouse.com/images/og-image.jpg">
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
-
-  <style>
-    .coming-soon {
-      text-align: center;
-      padding: 120px 20px;
-      color: #333;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    .coming-soon h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      color: #2671c0;
-      margin-bottom: 20px;
-    }
-
-    .coming-soon p {
-      font-size: 1.1rem;
-      color: #555;
-    }
-  </style>
 </head>
+
 <body>
   <header>
     <div class="nav-container">
@@ -51,7 +42,8 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -60,17 +52,40 @@
     </div>
   </header>
 
-  <main class="product-page">
-    <section id="our-products">
-      <div class="container">
-        <div class="coming-soon">
-          <h2>Coming Soon</h2>
-          <p>We’re crafting something sweet and special for you.<br>
-          Please check back soon to explore our delicious handmade treats!</p>
-        </div>
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Handcrafted Pastries, Made Daily</h1>
+      <p>Delicious treats, fresh ingredients, baked with love.</p>
+      <a href="https://derapastryhouse.square.site" class="btn-primary" target="_blank">Browse Menu</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Our Specialties</h2>
+    <div class="product-grid">
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1599785209798-9c1f4b5f0f10?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cakes" />
+        <p>Cakes</p>
       </div>
-    </section>
-  </main>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1607083206963-b61ca3f12774?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cookies" />
+        <p>Cookies</p>
+      </div>
+      <div class="product-item">
+        <img src="https://images.unsplash.com/photo-1611270418590-6a04c507aa32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Baklava" />
+        <p>Baklava</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h2>Subscribe to Our Newsletter</h2>
+    <p>Be the first to know about new arrivals and special offers.</p>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
 
   <footer>
     <div class="footer-columns">
@@ -78,18 +93,21 @@
         <h3>About</h3>
         <ul>
           <li><a href="about.html">Our Story</a></li>
+          <li><a href="#">Careers</a></li>
         </ul>
       </div>
       <div>
         <h3>Support</h3>
         <ul>
           <li><a href="#">FAQs</a></li>
+          <li><a href="#">Returns</a></li>
         </ul>
       </div>
       <div>
         <h3>Legal</h3>
         <ul>
           <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
         </ul>
       </div>
     </div>
