@@ -442,3 +442,31 @@ body, html {
   .hero-text { font-size: 1.4rem; }
   .product-card img { height: 180px; }
 }
+
+/* === FIX: Full-width images in hero & specials === */
+.hero,
+.specials {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.specials img,
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* Optional: remove green background gap behind image areas */
+.product-page,
+.specials,
+.about-page,
+.contact-page,
+.locations-page {
+  background-color: #ffffff;
+}
+
