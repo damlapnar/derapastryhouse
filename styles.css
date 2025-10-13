@@ -1,4 +1,4 @@
-/* styles.css - Final Responsive Version */
+/* styles.css - Final Responsive Version (Hunter Green Theme) */
 
 /* RESET */
 * {
@@ -10,7 +10,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
-  background-color: #2671c0;
+  background-color: #355E3B;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -59,7 +59,7 @@ p {
   font-size: 1.8rem;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
-  color: #2671c0;
+  color: #355E3B;
 }
 
 .nav-container nav ul {
@@ -70,17 +70,17 @@ p {
 
 .nav-container nav ul li a {
   text-decoration: none;
-  color: #2671c0;
+  color: #355E3B;
   font-weight: 600;
   transition: color 0.3s;
 }
 
 .nav-container nav ul li a:hover {
-  color: #1451a3;
+  color: #244a2c;
 }
 
 .cta {
-  background-color: #2671c0;
+  background-color: #355E3B;
   color: white;
   padding: 0.5rem 1.2rem;
   border-radius: 8px;
@@ -90,7 +90,7 @@ p {
 }
 
 .cta:hover {
-  background-color: #1451a3;
+  background-color: #244a2c;
 }
 
 /* HERO */
@@ -133,7 +133,7 @@ p {
 /* BUTTON */
 .btn-primary {
   background-color: #ffffff;
-  color: #2671c0;
+  color: #355E3B;
   padding: 0.7rem 1.5rem;
   border: none;
   border-radius: 10px;
@@ -181,7 +181,7 @@ p {
 
 .product-card .price {
   font-weight: bold;
-  color: #2671c0;
+  color: #355E3B;
 }
 
 .product-card:hover {
@@ -203,18 +203,18 @@ p {
 /* PAGE WRAPPER */
 .product-page, .contact-page, .locations-page {
   padding: 2rem;
-  background-color: #2671c0;
+  background-color: #355E3B;
 }
 
 /* ABOUT PAGE */
 .about-page {
-  background-color: #2671c0;
+  background-color: #355E3B;
   padding: 3rem 1rem;
 }
 
 .about-page section {
   background-color: #ffffff;
-  color: #2671c0;
+  color: #355E3B;
   padding: 2rem;
   margin: 2rem auto;
   border-radius: 12px;
@@ -241,7 +241,7 @@ p {
   text-align: center;
   padding: 2rem;
   background-color: #ffffff;
-  color: #2671c0;
+  color: #355E3B;
 }
 
 form {
@@ -260,7 +260,7 @@ input, textarea, button {
 }
 
 button {
-  background-color: #2671c0;
+  background-color: #355E3B;
   color: white;
   border: none;
   cursor: pointer;
@@ -268,7 +268,7 @@ button {
 }
 
 button:hover {
-  background-color: #1451a3;
+  background-color: #244a2c;
 }
 
 /* CONTACT SUCCESS MESSAGE */
@@ -296,13 +296,13 @@ button:hover {
 }
 
 .contact-form button:hover {
-  background-color: #145ea8;
+  background-color: #2f4d35;
   transition: background-color 0.3s ease;
 }
 
 /* FOOTER */
 .site-footer {
-  background-color: #2671c0;
+  background-color: #355E3B;
   color: #ffffff;
   padding: 2rem 1rem;
   font-family: 'Open Sans', sans-serif;
@@ -324,16 +324,6 @@ button:hover {
   font-size: 1.2rem;
 }
 
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 0.4rem;
-}
-
 .footer-section a {
   color: #ffffff;
   text-decoration: none;
@@ -352,7 +342,7 @@ button:hover {
 
 /* === SPECIALS SECTION (HOME PAGE) === */
 .specials {
-  background-color: #2671c0;
+  background-color: #355E3B;
   color: white;
   padding: 3rem 1.5rem;
   text-align: center;
@@ -364,16 +354,9 @@ button:hover {
   font-family: 'Playfair Display', serif;
 }
 
-.specials-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
 .special-card {
   background-color: #fff;
-  color: #2671c0;
+  color: #355E3B;
   border-radius: 12px;
   padding: 1rem;
   width: 300px;
@@ -386,22 +369,7 @@ button:hover {
   transform: translateY(-5px);
 }
 
-.special-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
-.special-card h3 {
-  font-size: 1.2rem;
-  margin-top: 0;
-}
-
-/* ===================== */
-/* 📱 RESPONSIVE DESIGN  */
-/* ===================== */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   h1 { font-size: 2rem; }
   h2 { font-size: 1.5rem; }
@@ -439,23 +407,14 @@ button:hover {
   }
   .hero-text { font-size: 1.6rem; }
 
-  .product-category {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-  .product-card {
-    width: 100%;
-    max-width: 95%;
-  }
-
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
 }
-/* ✅ Fix: Prevent mobile overflow on navbar */
+
+/* FIX MOBILE OVERFLOW */
 body, html {
   overflow-x: hidden;
 }
@@ -468,10 +427,6 @@ body, html {
 .nav-container nav ul {
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.nav-container nav ul li a {
-  text-align: center;
 }
 
 .cta {
