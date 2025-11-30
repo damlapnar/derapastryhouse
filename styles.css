@@ -470,3 +470,64 @@ body, html {
   .hero-text { font-size: 1.4rem; }
   .product-card img { height: 180px; }
 }
+
+/* === MOBILE NAV + ORDER NOW DÜZELTME === */
+@media (max-width: 768px) {
+  /* Genel boşluklar */
+  body {
+    padding-bottom: 80px; /* altta sabit buton için boşluk */
+  }
+
+  .nav-container {
+    padding: 1rem 1rem 0.75rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Logo ortalı */
+  .nav-container .logo {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Menü ortalı, satır satır */
+  .nav-container nav {
+    width: 100%;
+  }
+
+  .nav-container nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+  }
+
+  .nav-container nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-container nav ul li a {
+    display: block;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* Order Now: tam genişlik, altta sabit */
+  .cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+}
