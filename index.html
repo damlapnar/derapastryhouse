@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D'era House | Handcrafted Desserts in Clifton, NJ</title>
+
+  <!-- ✅ Title (SEO) -->
+  <title>D’era House | Best Cheesecake & Boutique Bakery in Clifton, NJ</title>
+
+  <!-- ✅ Meta Description (Owner “Too short” çözümü) -->
+  <meta name="description" content="D’era House is a woman-owned boutique bakery in Clifton, NJ, specializing in handcrafted cheesecakes, artisan pastries, custom birthday cakes, wedding cakes, and elegant dessert tables. Fresh desserts made daily. Visit us at 1076 Main Ave or order online for pickup and delivery." />
+
+  <!-- ✅ Canonical -->
+  <link rel="canonical" href="https://derapastryhouse.com/" />
+
+  <!-- ✅ Favicon (dosyayı repoya yüklemen gerekiyor; aşağıda anlattım) -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+  <!-- ✅ Social Share (OG/Twitter) -->
+  <meta property="og:title" content="D’era House | Best Cheesecake & Boutique Bakery in Clifton, NJ" />
+  <meta property="og:description" content="Woman-owned boutique bakery in Clifton, NJ—handcrafted cheesecakes, artisan pastries, custom cakes, and dessert tables. Fresh daily." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://derapastryhouse.com/" />
+  <!-- og:image: kendi fotoğrafını yükleyince bunu değiştir (assets/cheesecake.jpg gibi) -->
+  <meta property="og:image" content="https://derapastryhouse.com/assets/og-cheesecake.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="D’era House | Best Cheesecake in Clifton, NJ" />
+  <meta name="twitter:description" content="Handcrafted cheesecakes, artisan pastries, custom cakes & dessert tables—fresh daily in Clifton, NJ." />
+  <meta name="twitter:image" content="https://derapastryhouse.com/assets/og-cheesecake.jpg" />
+
+  <!-- ✅ CSS / Fonts -->
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+
   <style>
     .hero {
       position: relative;
@@ -17,7 +45,6 @@
       text-align: center;
       color: #fff;
     }
-
     .hero::before {
       content: '';
       position: absolute;
@@ -25,7 +52,6 @@
       background: rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
-
     .hero-text {
       position: relative;
       z-index: 2;
@@ -35,7 +61,6 @@
       color: #ffffff;
       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
-
     .hero-text p {
       font-family: 'Open Sans', sans-serif;
       font-size: 1.1rem;
@@ -43,7 +68,39 @@
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     }
   </style>
+
+  <!-- ✅ LocalBusiness Schema (Google için çok iyi) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "D’era House",
+    "image": "https://derapastryhouse.com/assets/og-cheesecake.jpg",
+    "url": "https://derapastryhouse.com/",
+    "telephone": "+12019239776",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1076 Main Ave",
+      "addressLocality": "Clifton",
+      "addressRegion": "NJ",
+      "postalCode": "07011",
+      "addressCountry": "US"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    }],
+    "sameAs": [
+      "https://instagram.com/derahousenj",
+      "https://www.yelp.com/biz/d-era-pastry-house-clifton"
+    ],
+    "servesCuisine": ["Desserts","Bakery","Coffee"]
+  }
+  </script>
 </head>
+
 <body>
   <header>
     <div class="nav-container">
@@ -57,15 +114,19 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <a href="https://www.doordash.com/store/d'era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_" class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
+
+      <!-- ✅ Order link (apostrophe sorun çıkarmasın diye URL encode) -->
+      <a href="https://www.doordash.com/store/d%27era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_"
+         class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
     </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-text">
-        <h1>Handcrafted Pastries, Made with Love</h1>
-        <p>Freshly baked every day in Clifton, NJ. Visit us or order online!</p>
+        <!-- ✅ H1: şehir + ana ürün (SEO için kritik) -->
+        <h1>Best Cheesecake & Boutique Bakery in Clifton, NJ</h1>
+        <p>Handcrafted cheesecakes, artisan pastries, custom cakes & dessert tables — fresh daily.</p>
       </div>
     </section>
 
@@ -92,13 +153,20 @@
     <div class="footer-container">
       <div class="footer-section">
         <h3>D’era House</h3>
+
         <p>
-          <a href="https://maps.apple.com/?q=1076+Main+Ave,+Clifton,+NJ+07011" target="_blank" rel="noopener noreferrer">
+          <a href="https://maps.apple.com/?q=1076+Main+Ave,+Clifton,+NJ+07011"
+             target="_blank" rel="noopener noreferrer">
             1076 Main Ave<br>Clifton, NJ 07011
           </a>
         </p>
+
+        <!-- ✅ Phone (Owner raporu için önemli) -->
+        <p><a href="tel:+12019239776">+1 (201) 923-9776</a></p>
+
         <p>Mon–Sun: 8:00 AM – 8:00 PM</p>
       </div>
+
       <div class="footer-section">
         <h3>Explore</h3>
         <ul>
@@ -107,18 +175,23 @@
           <li><a href="about.html">Our Story</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://www.doordash.com/store/d'era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_" target="_blank">Order Now</a></li>
+          <li>
+            <a href="https://www.doordash.com/store/d%27era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_"
+               target="_blank" rel="noopener noreferrer">Order Now</a>
+          </li>
         </ul>
       </div>
+
       <div class="footer-section">
         <h3>Connect</h3>
         <ul>
           <li><a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></li>
-          <li><a href="https://instagram.com/derahousenj" target="_blank">Instagram</a></li>
-          <li><a href="https://www.yelp.com/biz/d-era-pastry-house-clifton" target="_blank">Yelp</a></li>
+          <li><a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.yelp.com/biz/d-era-pastry-house-clifton" target="_blank" rel="noopener noreferrer">Yelp</a></li>
         </ul>
       </div>
     </div>
+
     <div class="footer-copy">
       &copy; 2025 D’era House. Handcrafted with heart in Clifton, NJ.
     </div>
