@@ -72,7 +72,7 @@ p {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   color: #355E3B;
-  text-decoration: none; /* ✅ underline fix */
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -82,7 +82,7 @@ p {
 .nav-container .logo:hover,
 .nav-container .logo:active {
   color: #355E3B;
-  text-decoration: none; /* ✅ underline fix */
+  text-decoration: none;
 }
 
 /* Desktop nav */
@@ -522,13 +522,31 @@ button:hover {
 /* =========================
    MOBILE DRAWER MENU
 ========================= */
+
+/* ✅ Hamburger görünürlük + feedback (menü açmaya çalıştığın belli olsun) */
 .menu-toggle {
   display: none;
   border: 0;
-  background: transparent;
+  background: rgba(53,94,59,0.08);
   cursor: pointer;
-  padding: 10px;
+  padding: 12px;
   border-radius: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.menu-toggle:hover {
+  background: rgba(53,94,59,0.14);
+}
+
+.menu-toggle:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.menu-toggle:focus-visible {
+  outline: 2px solid rgba(53,94,59,0.55);
+  outline-offset: 2px;
 }
 
 .menu-toggle .bar {
@@ -551,18 +569,18 @@ button:hover {
   z-index: 9998;
 }
 
-/* Drawer */
+/* ✅ Drawer SOLDAN (asıl fix) */
 .mobile-drawer {
   position: fixed;
   top: 0;
-  right: -320px;
+  left: -320px;                       /* 🔥 solda kapalı */
   width: min(320px, 86vw);
   height: 100vh;
   background: #ffffff;
   color: #355E3B;
-  box-shadow: -18px 0 40px rgba(0,0,0,0.18);
-  border-left: 3px solid #355E3B; /* ✅ blue yerine tema rengi */
-  transition: right 0.22s ease;
+  box-shadow: 18px 0 40px rgba(0,0,0,0.18); /* yön ters */
+  border-right: 3px solid #355E3B;    /* border sağa */
+  transition: left 0.22s ease;
   z-index: 9999;
   display: flex;
   flex-direction: column;
@@ -644,8 +662,9 @@ body.menu-open .drawer-overlay {
   pointer-events: auto;
 }
 
+/* ✅ soldan aç */
 body.menu-open .mobile-drawer {
-  right: 0;
+  left: 0;
 }
 
 /* Lock scroll */
