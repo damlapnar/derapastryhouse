@@ -565,3 +565,178 @@ body, html {
   }
 }
 
+/* =========================
+   MOBILE DRAWER MENU (A)
+   Add to END of styles.css
+========================= */
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 14px;
+}
+
+.menu-toggle .bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #355E3B;
+  margin: 5px 0;
+  border-radius: 99px;
+}
+
+/* Drawer + overlay hidden by default */
+.drawer-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 9998;
+}
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: min(320px, 86vw);
+  height: 100vh;
+  background: #ffffff;
+  color: #355E3B;
+  box-shadow: -18px 0 40px rgba(0,0,0,0.18);
+  border-left: 3px solid #2671c0;
+  transition: right 0.22s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-drawer__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 16px 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.mobile-drawer__brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #355E3B;
+}
+
+.drawer-close {
+  border: 0;
+  background: rgba(38,113,192,0.10);
+  color: #2671c0;
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.mobile-drawer__nav {
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mobile-drawer__nav a {
+  text-decoration: none;
+  color: #355E3B;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  padding: 12px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-drawer__nav a:hover {
+  background: rgba(38,113,192,0.06);
+  border-color: rgba(38,113,192,0.20);
+}
+
+.mobile-drawer__ctaWrap {
+  margin-top: auto;
+  padding: 14px 12px 18px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.mobile-drawer__cta {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #2671c0;
+  color: #fff;
+  font-weight: 800;
+  padding: 14px 14px;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(38,113,192,0.28);
+}
+
+/* OPEN STATE */
+body.menu-open .drawer-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.menu-open .mobile-drawer {
+  right: 0;
+}
+
+/* Lock scroll when menu open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* MOBILE: convert header to hamburger + hide old UL menu */
+@media (max-width: 768px) {
+  /* hide the old stacked menu */
+  .nav-container nav ul {
+    display: none !important;
+  }
+
+  /* show hamburger */
+  .menu-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* header layout: logo left, hamburger right */
+  .nav-container {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.9rem 1rem !important;
+  }
+
+  .nav-container .logo {
+    margin: 0 !important;
+    width: auto !important;
+    text-align: left !important;
+  }
+
+  /* keep your bottom fixed Order Now, but hide it while drawer is open */
+  body.menu-open .cta {
+    display: none !important;
+  }
+
+  /* WhatsApp icon under drawer */
+  .whatsapp-float {
+    z-index: 9997;
+  }
+}
+
+
