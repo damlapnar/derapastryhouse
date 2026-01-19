@@ -60,10 +60,15 @@ p {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   color: #355E3B;
-  .nav-container .logo {
   text-decoration: none;
+  display: inline-block;
 }
 
+.nav-container .logo:visited,
+.nav-container .logo:hover,
+.nav-container .logo:active {
+  color: #355E3B;
+  text-decoration: none;
 }
 
 .nav-container nav ul {
@@ -96,6 +101,7 @@ p {
 .cta:hover {
   background-color: #244a2c;
 }
+
 
 /* HERO */
 .hero {
