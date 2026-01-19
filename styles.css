@@ -60,6 +60,10 @@ p {
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   color: #355E3B;
+  .nav-container .logo {
+  text-decoration: none;
+}
+
 }
 
 .nav-container nav ul {
