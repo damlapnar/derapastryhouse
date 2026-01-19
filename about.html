@@ -63,6 +63,17 @@
   <header>
     <div class="nav-container">
       <div class="logo">D’ERA</div>
+
+      <!-- ✅ Mobile hamburger -->
+      <button class="menu-toggle" type="button"
+              aria-label="Open menu"
+              aria-controls="mobileDrawer"
+              aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -72,7 +83,10 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <a href="https://www.doordash.com/store/d'era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_" class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
+
+      <!-- ✅ Order link (apostrophe safe) -->
+      <a href="https://www.doordash.com/store/d%27era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_"
+         class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
     </div>
   </header>
 
@@ -120,6 +134,7 @@
         </p>
         <p>Mon–Sun: 8:00 AM – 8:00 PM</p>
       </div>
+
       <div class="footer-section">
         <h3>Explore</h3>
         <ul>
@@ -128,31 +143,93 @@
           <li><a href="about.html">Our Story</a></li>
           <li><a href="locations.html">Locations</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://www.doordash.com/store/d'era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_" target="_blank">Order Now</a></li>
+          <li>
+            <a href="https://www.doordash.com/store/d%27era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_"
+               target="_blank" rel="noopener noreferrer">Order Now</a>
+          </li>
         </ul>
       </div>
+
       <div class="footer-section">
         <h3>Connect</h3>
         <ul>
           <li><a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></li>
-          <li><a href="https://instagram.com/derahousenj" target="_blank">Instagram</a></li>
-          <li><a href="https://www.yelp.com/biz/d-era-pastry-house-clifton" target="_blank">Yelp</a></li>
+          <li><a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://www.yelp.com/biz/d-era-pastry-house-clifton" target="_blank" rel="noopener noreferrer">Yelp</a></li>
         </ul>
       </div>
     </div>
+
     <div class="footer-copy">
       &copy; 2025 D’era House. Handcrafted with heart in Clifton, NJ.
     </div>
   </footer>
+
+  <!-- ✅ Drawer overlay -->
+  <div class="drawer-overlay" data-drawer-close></div>
+
+  <!-- ✅ Mobile Drawer -->
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Menu">
+    <div class="mobile-drawer__top">
+      <div class="mobile-drawer__brand">D’era House</div>
+      <button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close>×</button>
+    </div>
+
+    <nav class="mobile-drawer__nav">
+      <a href="index.html">Home <span>›</span></a>
+      <a href="products.html">Products <span>›</span></a>
+      <a href="about.html">About <span>›</span></a>
+      <a href="locations.html">Locations <span>›</span></a>
+      <a href="contact.html">Contact <span>›</span></a>
+    </nav>
+
+    <div class="mobile-drawer__ctaWrap">
+      <a class="mobile-drawer__cta"
+         href="https://www.doordash.com/store/d%27era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_"
+         target="_blank" rel="noopener noreferrer">
+        Order Now
+      </a>
+    </div>
+  </aside>
+
+  <script>
+    (function () {
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const closeEls = document.querySelectorAll('[data-drawer-close]');
+      if (!toggleBtn) return;
+
+      function openMenu() {
+        document.body.classList.add('menu-open');
+        toggleBtn.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeMenu() {
+        document.body.classList.remove('menu-open');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+      }
+
+      toggleBtn.addEventListener('click', () => {
+        document.body.classList.contains('menu-open') ? closeMenu() : openMenu();
+      });
+
+      closeEls.forEach(el => el.addEventListener('click', closeMenu));
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+    })();
+  </script>
+
+  <!-- ✅ WhatsApp Floating Button -->
   <a href="https://wa.me/12019239776"
-   class="whatsapp-float"
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="Chat on WhatsApp">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-    alt="WhatsApp Chat">
-</a>
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp Chat">
+  </a>
 
 </body>
 </html>
