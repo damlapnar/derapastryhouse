@@ -1,10 +1,16 @@
-/* styles.css - Final Responsive Version (Hunter Green Theme, Fixed Images) */
+/* styles.css - Clean + Responsive (Hunter Green) */
 
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
 }
 
 body {
@@ -15,7 +21,9 @@ body {
   scroll-behavior: smooth;
 }
 
-/* TYPOGRAPHY */
+/* =========================
+   TYPOGRAPHY
+========================= */
 h1, h2, h3 {
   font-family: 'Playfair Display', serif;
   margin-bottom: 0.5em;
@@ -45,7 +53,9 @@ p {
   color: #f0f8ff;
 }
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION (DESKTOP)
+========================= */
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -53,24 +63,29 @@ p {
   padding: 1.2rem 2rem;
   background-color: #ffffff;
   border-bottom: 1px solid #ccc;
+  position: relative; /* mobile center logo için lazım */
 }
 
+/* Logo hem div hem a olabilir */
 .nav-container .logo {
   font-size: 1.8rem;
   font-family: 'Playfair Display', serif;
   font-weight: bold;
   color: #355E3B;
-  text-decoration: none;
-  display: inline-block;
+  text-decoration: none; /* ✅ underline fix */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .nav-container .logo:visited,
 .nav-container .logo:hover,
 .nav-container .logo:active {
   color: #355E3B;
-  text-decoration: none;
+  text-decoration: none; /* ✅ underline fix */
 }
 
+/* Desktop nav */
 .nav-container nav ul {
   list-style: none;
   display: flex;
@@ -88,6 +103,7 @@ p {
   color: #244a2c;
 }
 
+/* CTA (desktop) */
 .cta {
   background-color: #355E3B;
   color: white;
@@ -102,8 +118,9 @@ p {
   background-color: #244a2c;
 }
 
-
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero {
   position: relative;
   background: url('https://images.unsplash.com/photo-1612196524186-6512ce1511cf?q=80&w=1470&auto=format&fit=crop') center/cover no-repeat;
@@ -123,7 +140,7 @@ p {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35); /* daha net görünüm için opaklık azaltıldı */
+  background: rgba(0, 0, 0, 0.35);
   z-index: 1;
 }
 
@@ -144,7 +161,9 @@ p {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-/* BUTTON */
+/* =========================
+   BUTTON
+========================= */
 .btn-primary {
   background-color: #ffffff;
   color: #355E3B;
@@ -154,13 +173,16 @@ p {
   font-size: 1rem;
   text-decoration: none;
   transition: background-color 0.3s;
+  display: inline-block;
 }
 
 .btn-primary:hover {
   background-color: #f0f0f0;
 }
 
-/* PRODUCT GRID */
+/* =========================
+   PRODUCT GRID
+========================= */
 .product-category {
   padding: 2rem 1rem;
 }
@@ -214,13 +236,17 @@ p {
   }
 }
 
-/* PAGE WRAPPER */
+/* =========================
+   PAGE WRAPPER
+========================= */
 .product-page, .contact-page, .locations-page {
   padding: 2rem;
   background-color: #355E3B;
 }
 
-/* ABOUT PAGE */
+/* =========================
+   ABOUT PAGE
+========================= */
 .about-page {
   background-color: #355E3B;
   padding: 3rem 1rem;
@@ -242,6 +268,7 @@ p {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #355E3B;
 }
 
 .about-page section p {
@@ -250,7 +277,9 @@ p {
   color: #333;
 }
 
-/* FORMS */
+/* =========================
+   FORMS
+========================= */
 .newsletter, .contact-form {
   text-align: center;
   padding: 2rem;
@@ -285,7 +314,6 @@ button:hover {
   background-color: #244a2c;
 }
 
-/* CONTACT SUCCESS MESSAGE */
 #formSuccess {
   color: green;
   margin-top: 1rem;
@@ -309,12 +337,9 @@ button:hover {
   margin: 0 auto;
 }
 
-.contact-form button:hover {
-  background-color: #2f4d35;
-  transition: background-color 0.3s ease;
-}
-
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 .site-footer {
   background-color: #355E3B;
   color: #ffffff;
@@ -354,9 +379,11 @@ button:hover {
   opacity: 0.9;
 }
 
-/* === SPECIALS SECTION (HOME PAGE) === */
+/* =========================
+   SPECIALS (HOME)
+========================= */
 .specials {
-  background-color: #ffffff; /* beyaz arka plan */
+  background-color: #ffffff;
   color: #355E3B;
   padding: 3rem 0;
   text-align: center;
@@ -366,14 +393,10 @@ button:hover {
   font-size: 2.2rem;
   margin-bottom: 2rem;
   font-family: 'Playfair Display', serif;
-}
-
-.specials h2 {
   color: #2f4d35;
   text-shadow: 0 1px 5px rgba(0,0,0,0.2);
   letter-spacing: 0.5px;
 }
-
 
 .specials-grid {
   display: flex;
@@ -407,141 +430,9 @@ button:hover {
   transform: translateY(-5px);
 }
 
-/* RESPONSIVE */
-@media (max-width: 1024px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  .hero-text { font-size: 2rem; padding: 0 1rem; }
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-container nav ul {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-    gap: 0.8rem;
-  }
-
-  .nav-container nav ul li a {
-    display: block;
-    padding: 0.5rem 0;
-    width: 100%;
-    border-bottom: 1px solid #eee;
-  }
-
-  .cta {
-    margin-top: 1rem;
-    align-self: center;
-  }
-
-  .hero {
-    height: 280px;
-    background-position: center;
-  }
-  .hero-text { font-size: 1.6rem; }
-
-  .footer-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-}
-
-/* FIX MOBILE OVERFLOW */
-body, html {
-  overflow-x: hidden;
-}
-
-.nav-container {
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.nav-container nav ul {
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.cta {
-  width: 100%;
-  text-align: center;
-  margin-top: 0.5rem;
-}
-
-@media (max-width: 480px) {
-  h1 { font-size: 1.8rem; }
-  h2 { font-size: 1.3rem; }
-  p { font-size: 0.95rem; }
-  .hero-text { font-size: 1.4rem; }
-  .product-card img { height: 180px; }
-}
-
-/* === MOBILE NAV + ORDER NOW DÜZELTME === */
-@media (max-width: 768px) {
-  /* Genel boşluklar */
-  body {
-    padding-bottom: 80px; /* altta sabit buton için boşluk */
-  }
-
-  .nav-container {
-    padding: 1rem 1rem 0.75rem;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Logo ortalı */
-  .nav-container .logo {
-    font-size: 1.5rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
-
-  /* Menü ortalı, satır satır */
-  .nav-container nav {
-    width: 100%;
-  }
-
-  .nav-container nav ul {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 0.6rem;
-    margin-top: 0.5rem;
-  }
-
-  .nav-container nav ul li {
-    width: 100%;
-    text-align: center;
-  }
-
-  .nav-container nav ul li a {
-    display: block;
-    padding: 0.4rem 0;
-    border-bottom: 1px solid #eee;
-  }
-
-  /* Order Now: tam genişlik, altta sabit */
-  .cta {
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    max-width: 100%;
-    border-radius: 0;
-    margin: 0;
-    padding: 1rem 0;
-    text-align: center;
-  }
-}
-
+/* =========================
+   WHATSAPP FLOAT
+========================= */
 .whatsapp-float {
   position: fixed;
   bottom: 22px;
@@ -554,7 +445,7 @@ body, html {
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 24px rgba(0,0,0,0.25);
-  z-index: 9999;
+  z-index: 9997; /* drawer’ın altı */
 }
 
 .whatsapp-float img {
@@ -567,19 +458,70 @@ body, html {
   box-shadow: 0 14px 28px rgba(0,0,0,0.3);
 }
 
-/* Mobile safe spacing (Order Now bar varsa çakışmasın) */
+/* =========================
+   MOBILE - GENERAL
+========================= */
+@media (max-width: 1024px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  .hero-text { font-size: 2rem; padding: 0 1rem; }
+}
+
 @media (max-width: 768px) {
+  body {
+    padding-bottom: 80px; /* alttaki fixed Order Now için boşluk */
+  }
+
+  .hero {
+    height: 280px;
+    background-position: center;
+  }
+
+  .hero-text { font-size: 1.6rem; }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* WhatsApp, alttaki Order Now bar ile çakışmasın */
   .whatsapp-float {
     bottom: 90px;
     right: 18px;
   }
 }
 
-/* =========================
-   MOBILE DRAWER MENU (A)
-   Add to END of styles.css
-========================= */
+@media (max-width: 480px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.3rem; }
+  p { font-size: 0.95rem; }
+  .hero-text { font-size: 1.4rem; }
+  .product-card img { height: 180px; }
+}
 
+/* =========================
+   MOBILE FIXED ORDER NOW BAR
+========================= */
+@media (max-width: 768px) {
+  .cta {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 9996;
+  }
+}
+
+/* =========================
+   MOBILE DRAWER MENU
+========================= */
 .menu-toggle {
   display: none;
   border: 0;
@@ -598,7 +540,7 @@ body, html {
   border-radius: 99px;
 }
 
-/* Drawer + overlay hidden by default */
+/* Drawer overlay */
 .drawer-overlay {
   position: fixed;
   inset: 0;
@@ -609,6 +551,7 @@ body, html {
   z-index: 9998;
 }
 
+/* Drawer */
 .mobile-drawer {
   position: fixed;
   top: 0;
@@ -618,7 +561,7 @@ body, html {
   background: #ffffff;
   color: #355E3B;
   box-shadow: -18px 0 40px rgba(0,0,0,0.18);
-  border-left: 3px solid #2671c0;
+  border-left: 3px solid #355E3B; /* ✅ blue yerine tema rengi */
   transition: right 0.22s ease;
   z-index: 9999;
   display: flex;
@@ -642,8 +585,8 @@ body, html {
 
 .drawer-close {
   border: 0;
-  background: rgba(38,113,192,0.10);
-  color: #2671c0;
+  background: rgba(53,94,59,0.10);
+  color: #355E3B;
   width: 40px;
   height: 40px;
   border-radius: 14px;
@@ -673,8 +616,8 @@ body, html {
 }
 
 .mobile-drawer__nav a:hover {
-  background: rgba(38,113,192,0.06);
-  border-color: rgba(38,113,192,0.20);
+  background: rgba(53,94,59,0.06);
+  border-color: rgba(53,94,59,0.20);
 }
 
 .mobile-drawer__ctaWrap {
@@ -687,15 +630,15 @@ body, html {
   display: block;
   text-align: center;
   text-decoration: none;
-  background: #2671c0;
+  background: #355E3B;
   color: #fff;
   font-weight: 800;
   padding: 14px 14px;
   border-radius: 16px;
-  box-shadow: 0 12px 24px rgba(38,113,192,0.28);
+  box-shadow: 0 12px 24px rgba(53,94,59,0.28);
 }
 
-/* OPEN STATE */
+/* Open state */
 body.menu-open .drawer-overlay {
   opacity: 1;
   pointer-events: auto;
@@ -705,48 +648,51 @@ body.menu-open .mobile-drawer {
   right: 0;
 }
 
-/* Lock scroll when menu open */
+/* Lock scroll */
 body.menu-open {
   overflow: hidden;
 }
 
-/* MOBILE: convert header to hamburger + hide old UL menu */
+/* MOBILE header behavior:
+   - hamburger SOLDa
+   - logo ORTAda
+   - desktop UL gizli
+*/
 @media (max-width: 768px) {
-  /* hide the old stacked menu */
   .nav-container nav ul {
     display: none !important;
   }
 
-  /* show hamburger */
   .menu-toggle {
     display: inline-flex;
     align-items: center;
     justify-content: center;
   }
 
-  /* header layout: logo left, hamburger right */
+  /* header compact */
   .nav-container {
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
     padding: 0.9rem 1rem !important;
+    justify-content: flex-start !important;
   }
 
+  /* hamburger solda */
+  .menu-toggle {
+    position: relative;
+    z-index: 10000;
+  }
+
+  /* logo ortada */
   .nav-container .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0 !important;
     width: auto !important;
-    text-align: left !important;
+    text-align: center !important;
   }
 
-  /* keep your bottom fixed Order Now, but hide it while drawer is open */
+  /* Drawer açıkken alttaki Order Now bar gizlensin */
   body.menu-open .cta {
     display: none !important;
   }
-
-  /* WhatsApp icon under drawer */
-  .whatsapp-float {
-    z-index: 9997;
-  }
 }
-
-
