@@ -19,6 +19,7 @@
       color:#fff;
       margin-bottom:12px;
       line-height:1.2;
+      padding-top: 0; /* global h1 padding-top override */
     }
     .coming-soon-wrap p{
       color:#f0f8ff;
@@ -32,6 +33,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="nav-container">
@@ -57,14 +59,13 @@
         </ul>
       </nav>
 
-      <!-- ✅ Order link (apostrophe safe) -->
+      <!-- ✅ Desktop Order Now (mobile'da CSS gizliyor) -->
       <a href="https://www.doordash.com/store/d%27era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_"
          class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
     </div>
   </header>
 
   <main class="product-page">
-    <!-- ⬇️ Tüm ürün listeleri kaldırıldı; tek bir Coming Soon bölümü gösteriliyor -->
     <section class="coming-soon-wrap">
       <h1>Menu Coming Soon</h1>
       <p>We’re crafting something sweet and special for you. Please check back soon to explore our handmade treats!</p>
@@ -113,4 +114,75 @@
     </div>
 
     <div class="footer-copy">
-      &copy; 2025 D’era House. Handcrafted with heart in Clifton,
+      &copy; 2025 D’era House. Handcrafted with heart in Clifton, NJ.
+    </div>
+  </footer>
+
+  <!-- ✅ WhatsApp Floating Button -->
+  <a href="https://wa.me/12019239776"
+     class="whatsapp-float"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Chat on WhatsApp">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp Chat">
+  </a>
+
+  <!-- ✅ Drawer Overlay + Drawer (MUST exist on every page) -->
+  <div class="drawer-overlay" data-drawer-close></div>
+
+  <aside class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="mobile-drawer__top">
+      <div class="mobile-drawer__brand">D’ERA</div>
+      <button class="drawer-close" type="button" data-drawer-close aria-label="Close menu">×</button>
+    </div>
+
+    <nav class="mobile-drawer__nav" aria-label="Mobile navigation">
+      <a href="index.html">Home <span>›</span></a>
+      <a href="products.html">Products <span>›</span></a>
+      <a href="about.html">About <span>›</span></a>
+      <a href="locations.html">Locations <span>›</span></a>
+      <a href="contact.html">Contact <span>›</span></a>
+    </nav>
+
+    <div class="mobile-drawer__ctaWrap">
+      <a class="mobile-drawer__cta"
+         href="https://www.doordash.com/store/d%27era-house-clifton-34879151/74529546/?srsltid=AfmBOopoJm0l4AFoFxF34aUZ4DbYwlxO-_KSXpXwzM5jZntOZNXIQx4_"
+         target="_blank" rel="noopener noreferrer">Order Now</a>
+    </div>
+  </aside>
+
+  <!-- ✅ Drawer Script -->
+  <script>
+    (function () {
+      const btn = document.querySelector('.menu-toggle');
+      const overlay = document.querySelector('.drawer-overlay');
+      const drawer = document.getElementById('mobileDrawer');
+      const closers = document.querySelectorAll('[data-drawer-close]');
+
+      if (!btn || !overlay || !drawer) return;
+
+      const openMenu = () => {
+        document.body.classList.add('menu-open');
+        btn.setAttribute('aria-expanded', 'true');
+        drawer.setAttribute('aria-hidden', 'false');
+      };
+
+      const closeMenu = () => {
+        document.body.classList.remove('menu-open');
+        btn.setAttribute('aria-expanded', 'false');
+        drawer.setAttribute('aria-hidden', 'true');
+      };
+
+      btn.addEventListener('click', openMenu);
+      closers.forEach(el => el.addEventListener('click', closeMenu));
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeMenu();
+      });
+    })();
+  </script>
+
+</body>
+</html>
