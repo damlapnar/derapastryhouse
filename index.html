@@ -67,6 +67,188 @@
       color: #ffffff;
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
     }
+
+    /* ==========================
+       ✅ Google Reviews Section
+       (Black Elm style - D'era adapted)
+    ========================== */
+    .reviews-section {
+      padding: 70px 18px;
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8fb 100%);
+    }
+
+    .reviews-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .reviews-title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 600;
+      font-size: 2.2rem;
+      color: #1c1c1c;
+      margin: 0 0 10px;
+    }
+
+    .reviews-subtitle {
+      font-family: 'Open Sans', sans-serif;
+      color: #5c6770;
+      margin: 0 0 34px;
+      font-size: 1rem;
+    }
+
+    /* Desktop grid */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      align-items: stretch;
+      margin-bottom: 28px;
+    }
+
+    .review-card {
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.06);
+      border-radius: 18px;
+      padding: 18px 18px 16px;
+      text-align: left;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+      position: relative;
+      overflow: hidden;
+      min-height: 170px;
+    }
+
+    .review-card::before {
+      content: "“";
+      position: absolute;
+      top: 12px;
+      left: 14px;
+      font-size: 38px;
+      color: rgba(38, 113, 192, 0.15);
+      font-family: 'Playfair Display', serif;
+      line-height: 1;
+    }
+
+    .review-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      padding-left: 18px; /* to balance quote mark */
+    }
+
+    .review-stars {
+      font-size: 14px;
+      letter-spacing: 1px;
+      color: #f5b301; /* warm star */
+      white-space: nowrap;
+    }
+
+    .review-badge {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 12px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(38, 113, 192, 0.10);
+      color: #2671c0;
+      border: 1px solid rgba(38, 113, 192, 0.18);
+      white-space: nowrap;
+    }
+
+    .review-text {
+      font-family: 'Open Sans', sans-serif;
+      color: #2b2f33;
+      font-size: 0.98rem;
+      line-height: 1.55;
+      margin: 0 0 14px;
+      padding-left: 18px; /* to balance quote mark */
+    }
+
+    .review-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      border-top: 1px solid rgba(0,0,0,0.06);
+      padding-top: 12px;
+      padding-left: 18px;
+    }
+
+    .review-name {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: #1c1c1c;
+      font-size: 0.92rem;
+    }
+
+    .review-time {
+      font-family: 'Open Sans', sans-serif;
+      color: #7a8792;
+      font-size: 0.82rem;
+      white-space: nowrap;
+    }
+
+    .reviews-cta {
+      display: inline-block;
+      background: #2671c0;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      padding: 14px 22px;
+      border-radius: 999px;
+      box-shadow: 0 10px 22px rgba(38, 113, 192, 0.25);
+      transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+    }
+
+    .reviews-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 26px rgba(38, 113, 192, 0.30);
+      opacity: 0.95;
+    }
+
+    /* Mobile = horizontal scroll (carousel feel) */
+    @media (max-width: 980px) {
+      .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .reviews-section { padding: 60px 14px; }
+
+      .reviews-grid {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 85%;
+        overflow-x: auto;
+        gap: 14px;
+        padding-bottom: 12px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .review-card {
+        scroll-snap-align: start;
+      }
+
+      .reviews-grid::-webkit-scrollbar {
+        height: 8px;
+      }
+
+      .reviews-grid::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.15);
+        border-radius: 999px;
+      }
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      .reviews-cta { transition: none; }
+      .reviews-cta:hover { transform: none; }
+    }
   </style>
 
   <!-- ✅ LocalBusiness Schema (Google için çok iyi) -->
@@ -145,6 +327,95 @@
           <img src="https://images.unsplash.com/photo-1705663106388-6c1c51ff5a8d?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Baklava Delights">
           <h3>Baklava Delights</h3>
         </div>
+      </div>
+    </section>
+
+    <!-- ✅ NEW: Google Reviews Section (placed right after Specials) -->
+    <section class="reviews-section" aria-label="Google Reviews">
+      <div class="reviews-container">
+        <h2 class="reviews-title">What Our Customers Say</h2>
+        <p class="reviews-subtitle">Recent reviews from our guests in Clifton, NJ</p>
+
+        <div class="reviews-grid" role="list">
+          <!-- Replace texts with your real top reviews -->
+          <article class="review-card" role="listitem">
+            <div class="review-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-badge">Clifton, NJ</span>
+            </div>
+            <p class="review-text">Absolutely delicious. The cheesecake is rich, smooth, and tastes truly handmade. We’ll be back!</p>
+            <div class="review-footer">
+              <span class="review-name">Sarah M.</span>
+              <span class="review-time">2 weeks ago</span>
+            </div>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-badge">Clifton, NJ</span>
+            </div>
+            <p class="review-text">Beautiful desserts and super friendly service. Everything felt fresh and carefully crafted.</p>
+            <div class="review-footer">
+              <span class="review-name">Jason L.</span>
+              <span class="review-time">1 month ago</span>
+            </div>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-badge">Clifton, NJ</span>
+            </div>
+            <p class="review-text">Ordered for a birthday and the presentation was amazing. The flavors were perfect—everyone loved it.</p>
+            <div class="review-footer">
+              <span class="review-name">Emily R.</span>
+              <span class="review-time">3 weeks ago</span>
+            </div>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-badge">Clifton, NJ</span>
+            </div>
+            <p class="review-text">Best cheesecake I’ve had in NJ. Great texture, not overly sweet, and the crust is perfect.</p>
+            <div class="review-footer">
+              <span class="review-name">Nicole K.</span>
+              <span class="review-time">2 months ago</span>
+            </div>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-badge">Clifton, NJ</span>
+            </div>
+            <p class="review-text">The pastries are next level. You can tell everything is made with care—quality is consistent.</p>
+            <div class="review-footer">
+              <span class="review-name">Michael T.</span>
+              <span class="review-time">5 months ago</span>
+            </div>
+          </article>
+
+          <article class="review-card" role="listitem">
+            <div class="review-top">
+              <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+              <span class="review-badge">Clifton, NJ</span>
+            </div>
+            <p class="review-text">Amazing spot for desserts. Clean, welcoming, and everything tastes authentic and fresh.</p>
+            <div class="review-footer">
+              <span class="review-name">Alyssa P.</span>
+              <span class="review-time">4 months ago</span>
+            </div>
+          </article>
+        </div>
+
+        <a class="reviews-cta"
+           href="YOUR_GOOGLE_REVIEW_LINK"
+           target="_blank" rel="noopener noreferrer">
+          View All Reviews on Google
+        </a>
       </div>
     </section>
   </main>
