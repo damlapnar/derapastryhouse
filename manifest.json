@@ -1,0 +1,47 @@
+{
+  "name": "D'era House",
+  "short_name": "D'era",
+  "description": "Handcrafted cheesecakes, artisan pastries & custom cakes in Clifton, NJ",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#355E3B",
+  "theme_color": "#355E3B",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=192&h=192&fit=crop&auto=format",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=512&h=512&fit=crop&auto=format",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "shopping"],
+  "shortcuts": [
+    {
+      "name": "Our Menu",
+      "url": "/products.html",
+      "description": "View our full menu"
+    },
+    {
+      "name": "Custom Order",
+      "url": "/custom-order.html",
+      "description": "Request a custom cake"
+    },
+    {
+      "name": "Find Us",
+      "url": "/locations.html",
+      "description": "Get directions"
+    }
+  ]
+}
