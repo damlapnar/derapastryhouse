@@ -715,3 +715,66 @@ body.menu-open {
     display: none !important;
   }
 }
+
+/* =========================
+   LOCATION PAGE EXTRAS
+========================= */
+.location-info {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.location-box {
+  background: #ffffff;
+  color: #355E3B;
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.location-box h2 {
+  color: #355E3B;
+  margin-bottom: 0.8rem;
+}
+
+.location-box a {
+  color: #355E3B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.map-embed {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  margin-top: 1.5rem;
+}
+
+/* =========================
+   CONTACT PAGE EXTRAS
+========================= */
+.contact-info {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  background: #ffffff;
+  color: #355E3B;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.contact-info h1 {
+  color: #355E3B;
+  text-align: left;
+  padding-top: 0;
+}
+
+.contact-info p, .contact-info a {
+  color: #355E3B;
+}
+
+.contact-details {
+  margin-top: 1rem;
+}

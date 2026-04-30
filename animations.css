@@ -1,0 +1,211 @@
+/* ============================================================
+   D'era House — animations.css
+   ============================================================ */
+
+/* ── PAGE TRANSITION ── */
+body.page-enter {
+  opacity: 0;
+  transform: translateY(10px);
+}
+body.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+body.page-exit {
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.28s ease, transform 0.28s ease;
+}
+
+/* ── NAVBAR SCROLL STATE ── */
+.nav-container {
+  transition: padding 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+.nav-container.nav-scrolled {
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.10);
+}
+
+/* ── SCROLL REVEAL ── */
+.reveal-ready {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal-ready.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide-in from left for about sections */
+.about-page section.reveal-ready {
+  transform: translateX(-24px);
+}
+.about-page section.reveal-ready.revealed {
+  transform: translateX(0);
+}
+
+/* ── HERO ENHANCEMENTS ── */
+.hero {
+  will-change: background-position-y;
+}
+
+.hero-text {
+  animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-text h1 {
+  animation: heroFadeUp 0.9s 0.1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.hero-text p {
+  animation: heroFadeUp 0.9s 0.25s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ── SPECIAL CARDS ── */
+.special-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+.special-card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
+}
+.special-card img {
+  transition: transform 0.5s ease;
+}
+.special-card:hover img {
+  transform: scale(1.06);
+}
+
+/* ── REVIEW CARDS ── */
+.review-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+/* ── NAV LINK ANIMATION ── */
+.nav-link-anim {
+  position: relative;
+}
+.nav-link-anim::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #355E3B;
+  transition: width 0.28s ease;
+  border-radius: 2px;
+}
+.nav-link-anim:hover::after {
+  width: 100%;
+}
+
+/* ── LOGO HOVER ── */
+.nav-container .logo {
+  transition: letter-spacing 0.3s ease, opacity 0.2s ease;
+}
+.nav-container .logo:hover {
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+
+/* ── CTA BUTTON PULSE (Order Now) ── */
+@keyframes ctaPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(53, 94, 59, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(53, 94, 59, 0); }
+}
+.cta {
+  animation: ctaPulse 2.4s ease-in-out infinite;
+}
+/* Disable pulse on mobile fixed bar */
+@media (max-width: 768px) {
+  .cta { animation: none; }
+}
+
+/* ── FOOTER SECTIONS ── */
+.footer-section {
+  transition: transform 0.25s ease;
+}
+.footer-section:hover {
+  transform: translateY(-3px);
+}
+
+/* ── WHATSAPP FLOAT ── */
+.whatsapp-float {
+  animation: waBounce 2.8s ease-in-out infinite;
+}
+@keyframes waBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.whatsapp-float:hover {
+  animation: none;
+  transform: scale(1.1) translateY(-3px) !important;
+}
+
+/* ── CONTACT FORM INPUTS ── */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #355E3B !important;
+  box-shadow: 0 0 0 3px rgba(53, 94, 59, 0.15);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ── LOCATION BOX ── */
+.location-box {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.location-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
+}
+
+/* ── REVIEWS CTA BUTTON ── */
+.reviews-cta {
+  position: relative;
+  overflow: hidden;
+}
+.reviews-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+  transition: left 0.5s ease;
+}
+.reviews-cta:hover::before {
+  left: 100%;
+}
+
+/* ── MOBILE DRAWER: smooth slide-in already handled; add spring feel ── */
+.mobile-drawer {
+  transition: left 0.28s cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
+
+/* ── REDUCED MOTION: respect user preference ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal-ready {
+    opacity: 1;
+    transform: none;
+  }
+}
