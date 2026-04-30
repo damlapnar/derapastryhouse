@@ -117,68 +117,7 @@
   }, { passive: true });
   btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-  /* ── 10. CUSTOM CURSOR (desktop only) ── */
-  if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
-    const cursor = document.createElement('div');
-    cursor.id = 'dera-cursor';
-    cursor.innerHTML = '🎂';
-    document.body.appendChild(cursor);
-    let mouseX = -100, mouseY = -100, curX = -100, curY = -100;
-    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
-    (function animateCursor() {
-      curX += (mouseX - curX) * 0.15;
-      curY += (mouseY - curY) * 0.15;
-      cursor.style.transform = `translate(${curX}px, ${curY}px)`;
-      requestAnimationFrame(animateCursor);
-    })();
-    document.querySelectorAll('a, button, .special-card, .menu-card, .gallery-item, .insta-card').forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
-      el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
-    });
-  }
-
-  /* ── 11. CONFETTI (on form success) ── */
-  window.deraConfetti = function () {
-    const colors = ['#355E3B','#fff','#f5b301','#ff6b6b','#a8d5b5'];
-    for (let i = 0; i < 80; i++) {
-      const c = document.createElement('div');
-      c.className = 'confetti-piece';
-      c.style.cssText = `
-        left:${Math.random()*100}vw;
-        background:${colors[Math.floor(Math.random()*colors.length)]};
-        animation-delay:${Math.random()*0.8}s;
-        animation-duration:${1.2+Math.random()*1.2}s;
-        width:${6+Math.random()*8}px;
-        height:${6+Math.random()*8}px;
-        border-radius:${Math.random()>0.5?'50%':'2px'};
-      `;
-      document.body.appendChild(c);
-      setTimeout(() => c.remove(), 3000);
-    }
-  };
-
-  /* ── 12. TOUCH SWIPE for gallery ── */
-  const galleryGrid = document.getElementById('galleryGrid');
-  if (galleryGrid) {
-    let startX = 0;
-    galleryGrid.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, { passive: true });
-    galleryGrid.addEventListener('touchend', e => {
-      const diff = startX - e.changedTouches[0].clientX;
-      if (Math.abs(diff) > 60) {
-        const btns = [...document.querySelectorAll('.filter-btn')];
-        const active = btns.findIndex(b => b.classList.contains('active'));
-        const next = diff > 0 ? Math.min(active + 1, btns.length - 1) : Math.max(active - 1, 0);
-        if (next !== active) btns[next].click();
-      }
-    }, { passive: true });
-  }
-
-  /* ── 13. SMOOTH SCROLL for anchor links ── */
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      const target = document.querySelector(link.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-    });
+  ;
   });
 
   /* ── 14. LAZY LOADING (fallback for older browsers) ── */

@@ -412,24 +412,7 @@ input:focus, textarea:focus {
 #back-to-top:hover { background: #2a4a30; transform: translateY(-3px) !important; }
 @media (max-width: 768px) { #back-to-top { bottom: 100px; right: 16px; width: 42px; height: 42px; } }
 
-/* ============================================================
-   CUSTOM CURSOR
-   ============================================================ */
-#dera-cursor {
-  position: fixed;
-  top: 0; left: 0;
-  pointer-events: none;
-  z-index: 99997;
-  font-size: 1.4rem;
-  transform: translate(-50%, -50%);
-  transition: font-size 0.2s ease;
-  will-change: transform;
-  user-select: none;
-}
-#dera-cursor.cursor-hover { font-size: 2rem; }
-body { cursor: none; }
-input, textarea, select { cursor: text !important; }
-a, button { cursor: none; }
+
 
 /* ============================================================
    CONFETTI
