@@ -4,45 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gallery | D'era House — Clifton, NJ</title>
-  <meta name="description" content="Browse our gallery of handcrafted cheesecakes, custom cakes, pastries, and baklava from D'era House in Clifton, NJ.">
+  <meta name="description" content="Browse our gallery of handcrafted cheesecakes, custom cakes, baklava and pastries from D'era House in Clifton, NJ.">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="animations.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#355E3B">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="D'era House">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" as="style">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Bakery","name":"D'era House","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"87","bestRating":"5"},"url":"https://derapastryhouse.com/","telephone":"+12019239776","address":{"@type":"PostalAddress","streetAddress":"1076 Main Ave","addressLocality":"Clifton","addressRegion":"NJ","postalCode":"07011","addressCountry":"US"}}
-  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .gallery-page { background:#355E3B; padding:3rem 1.5rem 4rem; }
+    .gallery-page h1 { font-family:'Playfair Display',serif; color:#fff; text-align:center; font-size:clamp(1.8rem,5vw,2.4rem); padding-top:0; margin-bottom:0.5rem; }
+    .gallery-subtitle { text-align:center; color:rgba(255,255,255,0.8); margin-bottom:2.5rem; font-size:1rem; }
+    .gallery-filter { display:flex; flex-wrap:wrap; justify-content:center; gap:0.6rem; margin-bottom:2rem; }
+    .filter-btn { background:rgba(255,255,255,0.15); border:1px solid rgba(255,255,255,0.3); color:#fff; font-family:'Open Sans',sans-serif; font-weight:600; padding:0.5rem 1.2rem; border-radius:999px; cursor:pointer; transition:background 0.2s,transform 0.2s; font-size:0.9rem; }
+    .filter-btn:hover, .filter-btn.active { background:#fff; color:#355E3B; transform:translateY(-1px); }
+    .gallery-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.2rem; max-width:1100px; margin:0 auto; }
+    .gallery-item { border-radius:16px; overflow:hidden; background:#fff; box-shadow:0 4px 20px rgba(0,0,0,0.14); cursor:pointer; transition:transform 0.3s,box-shadow 0.3s; }
+    .gallery-item:hover { transform:translateY(-5px); box-shadow:0 16px 36px rgba(0,0,0,0.2); }
+    .gallery-item img { width:100%; height:240px; object-fit:cover; display:block; transition:transform 0.5s; }
+    .gallery-item:hover img { transform:scale(1.07); }
+    .gallery-caption { padding:0.8rem 1rem; font-family:'Open Sans',sans-serif; font-weight:600; color:#355E3B; font-size:0.92rem; }
+    #lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.92); z-index:99998; align-items:center; justify-content:center; padding:1rem; }
+    #lightbox.active { display:flex; }
+    #lightbox img { max-width:90vw; max-height:85vh; border-radius:12px; object-fit:contain; }
+    #lightbox-close { position:absolute; top:20px; right:24px; color:#fff; font-size:2.2rem; cursor:pointer; background:none; border:none; line-height:1; }
+    .insta-cta-wrap { text-align:center; margin-top:3rem; padding:2rem; background:rgba(255,255,255,0.1); border-radius:16px; max-width:600px; margin-left:auto; margin-right:auto; }
+    .insta-cta-wrap p { color:#fff; font-size:1.05rem; margin-bottom:1rem; }
+    .insta-cta-btn { display:inline-flex; align-items:center; gap:0.5rem; background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888); color:#fff; font-weight:700; font-family:'Open Sans',sans-serif; padding:0.8rem 1.8rem; border-radius:999px; text-decoration:none; transition:transform 0.2s,box-shadow 0.2s; box-shadow:0 4px 16px rgba(220,39,67,0.3); }
+    .insta-cta-btn:hover { transform:translateY(-2px); box-shadow:0 8px 22px rgba(220,39,67,0.4); }
+    @media(max-width:600px){ .gallery-grid { grid-template-columns:repeat(2,1fr); gap:0.8rem; } .gallery-item img { height:160px; } }
+    [data-theme="dark"] .gallery-caption { color:#a8d5b5; }
+    [data-theme="dark"] .gallery-item { background:#243d27; }
+  </style>
 </head>
 <body>
   <header>
     <div class="nav-container">
       <a href="index.html" class="logo">D'ERA</a>
-      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+      <nav><ul>
+        <li><a href="index.html">Home</a></li><li><a href="products.html">Products</a></li><li><a href="gallery.html" class="nav-active">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact</a></li>
+      </ul></nav>
       <a href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
     </div>
   </header>
 
   <main class="gallery-page">
     <h1>Our Gallery</h1>
-    <p class="gallery-subtitle">A taste of what we make — fresh every day in Clifton, NJ</p>
+    <p class="gallery-subtitle">Made fresh every day — swipe to explore by category</p>
 
     <div class="gallery-filter">
       <button class="filter-btn active" data-filter="all">All</button>
@@ -53,188 +62,57 @@
     </div>
 
     <div class="gallery-grid" id="galleryGrid">
-
-      <!-- Cheesecakes -->
-      <div class="gallery-item reveal-ready" data-category="cheesecake">
-        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=600&auto=format&fit=crop" alt="Classic New York Cheesecake" loading="lazy">
-        <div class="gallery-caption">Classic New York Cheesecake</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="cheesecake">
-        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=600&auto=format&fit=crop" alt="Strawberry Cheesecake" loading="lazy">
-        <div class="gallery-caption">Strawberry Dream Cheesecake</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="cheesecake">
-        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600&auto=format&fit=crop" alt="Chocolate Cheesecake" loading="lazy">
-        <div class="gallery-caption">Chocolate Indulgence</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="cheesecake">
-        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?q=80&w=600&auto=format&fit=crop" alt="Blueberry Cheesecake" loading="lazy">
-        <div class="gallery-caption">Wild Blueberry Cheesecake</div>
-      </div>
-
-      <!-- Custom Cakes -->
-      <div class="gallery-item reveal-ready" data-category="cake">
-        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=600&auto=format&fit=crop" alt="Birthday Cake" loading="lazy">
-        <div class="gallery-caption">Custom Birthday Cake</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="cake">
-        <img src="https://images.unsplash.com/photo-1519340333755-56e9c1d04579?q=80&w=600&auto=format&fit=crop" alt="Wedding Cake" loading="lazy">
-        <div class="gallery-caption">Elegant Wedding Cake</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="cake">
-        <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?q=80&w=600&auto=format&fit=crop" alt="Celebration Cake" loading="lazy">
-        <div class="gallery-caption">Celebration Cake</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="cake">
-        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=600&auto=format&fit=crop" alt="Layered Cake" loading="lazy">
-        <div class="gallery-caption">Layered Special Cake</div>
-      </div>
-
-      <!-- Pastries -->
-      <div class="gallery-item reveal-ready" data-category="pastry">
-        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=600&auto=format&fit=crop" alt="Artisan Cookies" loading="lazy">
-        <div class="gallery-caption">Artisan Cookies</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="pastry">
-        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=600&auto=format&fit=crop" alt="Butter Croissants" loading="lazy">
-        <div class="gallery-caption">Butter Croissants</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="pastry">
-        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=600&auto=format&fit=crop" alt="Artisan Bread" loading="lazy">
-        <div class="gallery-caption">Artisan Bread</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="pastry">
-        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=600&auto=format&fit=crop" alt="Fresh Pastries" loading="lazy">
-        <div class="gallery-caption">Fresh Daily Pastries</div>
-      </div>
-
-      <!-- Baklava -->
-      <div class="gallery-item reveal-ready" data-category="baklava">
-        <img src="https://images.unsplash.com/photo-1519915028121-7d3463d5b1ff?q=80&w=600&auto=format&fit=crop" alt="Classic Baklava" loading="lazy">
-        <div class="gallery-caption">Classic Baklava</div>
-      </div>
-      <div class="gallery-item reveal-ready" data-category="baklava">
-        <img src="https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?q=80&w=600&auto=format&fit=crop" alt="Assorted Turkish Sweets" loading="lazy">
-        <div class="gallery-caption">Assorted Gift Box</div>
-      </div>
-
+      <div class="gallery-item" data-category="cheesecake"><img src="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?w=600&auto=format&fit=crop" alt="Classic New York Cheesecake" loading="lazy"><div class="gallery-caption">Classic New York Cheesecake</div></div>
+      <div class="gallery-item" data-category="cheesecake"><img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=600&auto=format&fit=crop" alt="Strawberry Cheesecake" loading="lazy"><div class="gallery-caption">Strawberry Cheesecake</div></div>
+      <div class="gallery-item" data-category="cheesecake"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop" alt="Chocolate Cheesecake" loading="lazy"><div class="gallery-caption">Chocolate Cheesecake</div></div>
+      <div class="gallery-item" data-category="cheesecake"><img src="https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&auto=format&fit=crop" alt="Blueberry Cheesecake" loading="lazy"><div class="gallery-caption">Wild Blueberry Cheesecake</div></div>
+      <div class="gallery-item" data-category="cake"><img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600&auto=format&fit=crop" alt="Birthday Cake" loading="lazy"><div class="gallery-caption">Custom Birthday Cake</div></div>
+      <div class="gallery-item" data-category="cake"><img src="https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&auto=format&fit=crop" alt="Wedding Cake" loading="lazy"><div class="gallery-caption">Wedding Cake</div></div>
+      <div class="gallery-item" data-category="cake"><img src="https://images.unsplash.com/photo-1562440499-64c9a111f713?w=600&auto=format&fit=crop" alt="Celebration Cake" loading="lazy"><div class="gallery-caption">Celebration Cake</div></div>
+      <div class="gallery-item" data-category="cake"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&auto=format&fit=crop" alt="Layered Cake" loading="lazy"><div class="gallery-caption">Layered Special Cake</div></div>
+      <div class="gallery-item" data-category="pastry"><img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop" alt="Artisan Cookies" loading="lazy"><div class="gallery-caption">Artisan Cookies</div></div>
+      <div class="gallery-item" data-category="pastry"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&auto=format&fit=crop" alt="Butter Croissants" loading="lazy"><div class="gallery-caption">Butter Croissants</div></div>
+      <div class="gallery-item" data-category="pastry"><img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?w=600&auto=format&fit=crop" alt="Fresh Pastries" loading="lazy"><div class="gallery-caption">Fresh Daily Pastries</div></div>
+      <div class="gallery-item" data-category="pastry"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&auto=format&fit=crop" alt="Artisan Bread" loading="lazy"><div class="gallery-caption">Artisan Bread</div></div>
+      <div class="gallery-item" data-category="baklava"><img src="https://images.unsplash.com/photo-1519915028121-7d3463d5b1ff?w=600&auto=format&fit=crop" alt="Classic Baklava" loading="lazy"><div class="gallery-caption">Classic Baklava</div></div>
+      <div class="gallery-item" data-category="baklava"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=600&auto=format&fit=crop" alt="Assorted Turkish Sweets" loading="lazy"><div class="gallery-caption">Assorted Gift Box</div></div>
+      <div class="gallery-item" data-category="baklava"><img src="https://images.unsplash.com/photo-1551404973-761c83cd8339?w=600&auto=format&fit=crop" alt="Pistachio Sweets" loading="lazy"><div class="gallery-caption">Pistachio Baklava</div></div>
     </div>
 
-    <!-- Instagram CTA -->
-    <div style="text-align:center; margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.1); border-radius: 16px; max-width: 600px; margin-left: auto; margin-right: auto;">
-      <p style="color:#fff; font-size:1.1rem; margin-bottom:1rem;">📸 Follow us for daily updates!</p>
-      <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer"
-         style="display:inline-flex; align-items:center; gap:0.5rem; background:#fff; color:#355E3B; font-weight:700; font-family:'Open Sans',sans-serif; padding:0.8rem 1.8rem; border-radius:999px; text-decoration:none; transition:transform 0.2s; box-shadow: 0 4px 16px rgba(0,0,0,0.15);">
-        📷 @derahousenj on Instagram
-      </a>
+    <div class="insta-cta-wrap">
+      <p>Follow us for daily photos and specials 📸</p>
+      <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="insta-cta-btn">Follow @derahousenj on Instagram</a>
     </div>
   </main>
 
-  <!-- Lightbox -->
-  <div id="lightbox">
-    <button id="lightbox-close" aria-label="Close">×</button>
-    <img loading="lazy" id="lightbox-img" src="" alt="">
-  </div>
+  <div id="lightbox"><button id="lightbox-close" aria-label="Close">×</button><img id="lightbox-img" src="" alt=""></div>
 
   <footer class="site-footer">
     <div class="footer-container">
-      <div class="footer-section">
-        <h3>D'era House</h3>
-        <p><a href="https://maps.google.com/?q=1076+Main+Ave,+Clifton,+NJ+07011" target="_blank" rel="noopener noreferrer">1076 Main Ave<br>Clifton, NJ 07011</a></p>
-        <p><a href="tel:+12019239776">+1 (201) 923-9776</a></p>
-        <p>Mon–Sun: 8:00 AM – 8:00 PM</p>
-      </div>
-      <div class="footer-section">
-        <h3>Explore</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Menu</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">Our Story</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" target="_blank" rel="noopener noreferrer">Order Now</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Connect</h3>
-        <ul>
-          <li><a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></li>
-          <li><a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-          <li><a href="https://www.yelp.com/biz/d-era-pastry-house-clifton" target="_blank" rel="noopener noreferrer">Yelp</a></li>
-        </ul>
-      </div>
+      <div class="footer-section"><h3>D'era House</h3><p><a href="https://maps.google.com/?q=1076+Main+Ave,+Clifton,+NJ+07011" target="_blank" rel="noopener noreferrer">1076 Main Ave<br>Clifton, NJ 07011</a></p><p><a href="tel:+12019239776">+1 (201) 923-9776</a></p><p>Mon–Sun: 8:00 AM – 8:00 PM</p></div>
+      <div class="footer-section"><h3>Explore</h3><ul><li><a href="index.html">Home</a></li><li><a href="products.html">Menu</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">Our Story</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-section"><h3>Connect</h3><ul><li><a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></li><li><a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer">Instagram @derahousenj</a></li><li><a href="https://www.yelp.com/biz/d-era-pastry-house-clifton" target="_blank" rel="noopener noreferrer">Yelp</a></li></ul></div>
     </div>
     <div class="footer-copy">&copy; 2026 D'era House. Handcrafted with heart in Clifton, NJ.</div>
   </footer>
-
   <div class="drawer-overlay" data-drawer-close></div>
   <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Menu">
-    <div class="mobile-drawer__top">
-      <div class="mobile-drawer__brand">D'era House</div>
-      <button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close>×</button>
-    </div>
-    <nav class="mobile-drawer__nav">
-      <a href="index.html">Home <span>›</span></a>
-      <a href="products.html">Products <span>›</span></a>
-      <a href="gallery.html">Gallery <span>›</span></a>
-      <a href="about.html">About <span>›</span></a>
-      <a href="locations.html">Locations <span>›</span></a>
-      <a href="contact.html">Contact <span>›</span></a>
-    </nav>
-    <div class="mobile-drawer__ctaWrap">
-      <a class="mobile-drawer__cta" href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" target="_blank" rel="noopener noreferrer">Order Now</a>
-    </div>
+    <div class="mobile-drawer__top"><div class="mobile-drawer__brand">D'era House</div><button class="drawer-close" type="button" aria-label="Close menu" data-drawer-close>×</button></div>
+    <nav class="mobile-drawer__nav"><a href="index.html">Home <span>›</span></a><a href="products.html">Products <span>›</span></a><a href="gallery.html">Gallery <span>›</span></a><a href="about.html">About <span>›</span></a><a href="locations.html">Locations <span>›</span></a><a href="contact.html">Contact <span>›</span></a></nav>
+    <div class="mobile-drawer__ctaWrap"><a class="mobile-drawer__cta" href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" target="_blank" rel="noopener noreferrer">Order Now</a></div>
   </aside>
-
   <script>
-    // Gallery filter
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        galleryItems.forEach(item => {
-          const show = filter === 'all' || item.dataset.category === filter;
-          item.style.display = show ? '' : 'none';
-        });
-      });
-    });
-
+    // Filter
+    document.querySelectorAll('.filter-btn').forEach(btn=>{btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.gallery-item').forEach(item=>{item.style.display=(f==='all'||item.dataset.category===f)?'':'none';});});});
     // Lightbox
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const lightboxClose = document.getElementById('lightbox-close');
-
-    galleryItems.forEach(item => {
-      item.addEventListener('click', () => {
-        const img = item.querySelector('img');
-        lightboxImg.src = img.src.replace('w=600', 'w=1200');
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
-    });
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
-    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-
-    function closeLightbox() {
-      lightbox.classList.remove('active');
-      document.body.style.overflow = '';
-    }
-
+    const lb=document.getElementById('lightbox'),lbImg=document.getElementById('lightbox-img');
+    document.querySelectorAll('.gallery-item').forEach(item=>{item.addEventListener('click',()=>{const img=item.querySelector('img');lbImg.src=img.src.replace('w=600','w=1200');lbImg.alt=img.alt;lb.classList.add('active');document.body.style.overflow='hidden';});});
+    document.getElementById('lightbox-close').addEventListener('click',()=>{lb.classList.remove('active');document.body.style.overflow='';});
+    lb.addEventListener('click',e=>{if(e.target===lb){lb.classList.remove('active');document.body.style.overflow='';}});
     // Drawer
     (function(){const t=document.querySelector('.menu-toggle'),c=document.querySelectorAll('[data-drawer-close]');if(!t)return;function o(){document.body.classList.add('menu-open');t.setAttribute('aria-expanded','true');}function cl(){document.body.classList.remove('menu-open');t.setAttribute('aria-expanded','false');}t.addEventListener('click',()=>document.body.classList.contains('menu-open')?cl():o());c.forEach(el=>el.addEventListener('click',cl));document.addEventListener('keydown',(e)=>{if(e.key==='Escape')cl();});})();
   </script>
-
-  <a href="https://wa.me/12019239776" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
-  </a>
+  <a href="https://wa.me/12019239776" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy"></a>
   <script src="animations.js"></script>
 </body>
 </html>

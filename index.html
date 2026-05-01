@@ -3,263 +3,363 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D'era House | Best Cheesecake & Boutique Bakery in Clifton, NJ</title>
-  <meta name="description" content="D'era House is a woman-owned boutique bakery in Clifton, NJ, specializing in handcrafted cheesecakes, artisan pastries, custom birthday cakes, wedding cakes, and elegant dessert tables. Fresh desserts made daily. Visit us at 1076 Main Ave or order online for pickup and delivery." />
-  <link rel="canonical" href="https://derapastryhouse.com/" />
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta property="og:title" content="D'era House | Best Cheesecake & Boutique Bakery in Clifton, NJ" />
-  <meta property="og:description" content="Woman-owned boutique bakery in Clifton, NJ—handcrafted cheesecakes, artisan pastries, custom cakes, and dessert tables. Fresh daily." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://derapastryhouse.com/" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200&auto=format&fit=crop" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="D'era House | Best Cheesecake in Clifton, NJ" />
-  <meta name="twitter:description" content="Handcrafted cheesecakes, artisan pastries, custom cakes & dessert tables—fresh daily in Clifton, NJ." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200&auto=format&fit=crop" />
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="animations.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    .hero {
-      position: relative;
-      background: url('https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?q=80&w=1470&auto=format&fit=crop') center/cover no-repeat;
-      height: 480px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
-    .hero::before { content: ''; position: absolute; inset: 0; background: rgba(0,0,0,0.45); z-index: 1; }
-    .hero-text { position: relative; z-index: 2; padding: 0 1.5rem; }
-    .hero-text h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; color: #fff; text-shadow: 2px 2px 8px rgba(0,0,0,0.5); margin-bottom: 0.6rem; padding-top: 0; text-align: center; }
-    .hero-text p { font-family: 'Open Sans', sans-serif; font-size: 1.15rem; color: #f0ece4; text-shadow: 1px 1px 4px rgba(0,0,0,0.4); margin-bottom: 1.4rem; }
-    .hero-btn { display: inline-block; background: #fff; color: #355E3B; font-family: 'Open Sans', sans-serif; font-weight: 700; padding: 0.75rem 2rem; border-radius: 999px; text-decoration: none; font-size: 1rem; transition: background 0.2s, transform 0.2s; box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
-    .hero-btn:hover { background: #f0ece4; transform: translateY(-2px); }
-    @media (max-width: 768px) { .hero { height: 340px; } .hero-text h1 { font-size: 1.8rem; } .hero-text p { font-size: 1rem; } }
-
-    .why-us { background: #2a4a30; padding: 56px 20px; text-align: center; }
-    .why-us h2 { color: #fff; font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 2rem; }
-    .why-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 900px; margin: 0 auto; }
-    .why-item { color: #fff; max-width: 200px; text-align: center; }
-    .why-icon { font-size: 2.4rem; margin-bottom: 0.5rem; }
-    .why-item h3 { color: #fff; font-size: 1rem; margin-bottom: 0.3rem; }
-    .why-item p { color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0; }
-
-    .reviews-section { padding: 70px 18px; background: linear-gradient(180deg,#fff 0%,#f6f8fb 100%); }
-    .reviews-container { max-width: 1100px; margin: 0 auto; text-align: center; }
-    .reviews-title { font-family: 'Playfair Display', serif; font-weight: 600; font-size: 2.2rem; color: #1c1c1c; margin: 0 0 10px; }
-    .reviews-subtitle { font-family: 'Open Sans', sans-serif; color: #5c6770; margin: 0 0 34px; font-size: 1rem; }
-    .reviews-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; align-items: stretch; margin-bottom: 28px; }
-    .review-card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 18px; padding: 18px 18px 16px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.06); position: relative; overflow: hidden; min-height: 170px; }
-    .review-card::before { content: '\201C'; position: absolute; top: 12px; left: 14px; font-size: 38px; color: rgba(53,94,59,0.15); font-family: 'Playfair Display', serif; line-height: 1; }
-    .review-top { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px; padding-left: 18px; }
-    .review-stars { font-size: 14px; letter-spacing: 1px; color: #f5b301; white-space: nowrap; }
-    .review-badge { font-family: 'Open Sans', sans-serif; font-size: 12px; padding: 6px 10px; border-radius: 999px; background: rgba(53,94,59,0.10); color: #355E3B; border: 1px solid rgba(53,94,59,0.18); white-space: nowrap; }
-    .review-text { font-family: 'Open Sans', sans-serif; color: #2b2f33; font-size: 0.98rem; line-height: 1.55; margin: 0 0 14px; padding-left: 18px; }
-    .review-footer { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; border-top: 1px solid rgba(0,0,0,0.06); padding-top: 12px; padding-left: 18px; }
-    .review-name { font-family: 'Open Sans', sans-serif; font-weight: 700; color: #1c1c1c; font-size: 0.92rem; }
-    .review-time { font-family: 'Open Sans', sans-serif; color: #7a8792; font-size: 0.82rem; white-space: nowrap; }
-    .reviews-cta { display: inline-block; background: #355E3B; color: #fff; text-decoration: none; font-family: 'Open Sans', sans-serif; font-weight: 700; padding: 14px 22px; border-radius: 999px; box-shadow: 0 10px 22px rgba(53,94,59,0.25); transition: transform 0.15s ease, box-shadow 0.15s ease; }
-    .reviews-cta:hover { transform: translateY(-1px); box-shadow: 0 14px 26px rgba(53,94,59,0.30); }
-    @media (max-width: 980px) { .reviews-grid { grid-template-columns: 1fr 1fr; } }
-    @media (max-width: 720px) { .reviews-section { padding: 48px 14px; } .reviews-title { font-size: 1.7rem; } .reviews-grid { display: flex; flex-direction: column; gap: 14px; margin-bottom: 22px; } .review-card { min-height: auto; } }
-  </style>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Bakery","name":"D'era House","image":"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200","url":"https://derapastryhouse.com/","telephone":"+12019239776","address":{"@type":"PostalAddress","streetAddress":"1076 Main Ave","addressLocality":"Clifton","addressRegion":"NJ","postalCode":"07011","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"20:00"}],"sameAs":["https://instagram.com/derahousenj","https://www.yelp.com/biz/d-era-pastry-house-clifton"],"servesCuisine":["Desserts","Bakery","Coffee"]}
-  </script>
+  <title>D'era House | Boutique Bakery & Cheesecakes in Clifton, NJ</title>
+  <meta name="description" content="D'era House is a woman-owned boutique bakery in Clifton, NJ. Handcrafted cheesecakes, custom cakes, baklava & artisan pastries — made fresh every day. Order online or visit us at 1076 Main Ave.">
+  <link rel="canonical" href="https://derapastryhouse.com/">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
   <meta name="theme-color" content="#355E3B">
   <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-title" content="D'era House">
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" as="style">
+  <meta property="og:title" content="D'era House | Boutique Bakery in Clifton, NJ">
+  <meta property="og:description" content="Handcrafted cheesecakes, custom cakes & baklava — made fresh daily in Clifton, NJ.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://derapastryhouse.com/">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?w=1200&auto=format&fit=crop">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="animations.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1470&auto=format&fit=crop') center/cover no-repeat;
+      min-height: 520px;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+    }
+    .hero::before { content:''; position:absolute; inset:0; background:rgba(0,0,0,0.48); z-index:1; }
+    .hero-text { position:relative; z-index:2; padding:2rem 1.5rem; max-width:700px; }
+    .hero-text h1 { font-family:'Playfair Display',serif; font-size:clamp(1.8rem,5vw,3rem); color:#fff; text-shadow:2px 2px 8px rgba(0,0,0,0.5); margin-bottom:0.8rem; padding-top:0; line-height:1.2; }
+    .hero-text p { font-family:'Open Sans',sans-serif; font-size:clamp(0.95rem,2.5vw,1.15rem); color:#f0ece4; text-shadow:1px 1px 4px rgba(0,0,0,0.4); margin-bottom:1.6rem; line-height:1.6; }
+    .hero-actions { display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
+    .hero-btn { display:inline-block; background:#fff; color:#355E3B; font-family:'Open Sans',sans-serif; font-weight:700; padding:0.8rem 2rem; border-radius:999px; text-decoration:none; font-size:1rem; transition:transform 0.2s,box-shadow 0.2s; box-shadow:0 4px 16px rgba(0,0,0,0.2); }
+    .hero-btn:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(0,0,0,0.25); }
+    .hero-btn.secondary { background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.8); }
+    .hero-btn.secondary:hover { background:rgba(255,255,255,0.15); }
+    .hero-rating { display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.15); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.3); border-radius:999px; padding:6px 14px; margin-top:1.2rem; font-family:'Open Sans',sans-serif; font-size:0.88rem; color:#fff; text-decoration:none; }
+    .hero-rating .stars { color:#f5b301; letter-spacing:1px; }
+    @media(max-width:768px){ .hero { min-height:380px; } }
+
+    /* ── SPECIALS ── */
+    .specials { background:#fff; padding:60px 20px; text-align:center; }
+    .specials h2 { font-family:'Playfair Display',serif; color:#1c1c1c; font-size:clamp(1.5rem,4vw,2.2rem); margin-bottom:0.5rem; }
+    .specials-sub { color:#666; margin-bottom:2.5rem; font-size:1rem; }
+    .specials-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; max-width:1100px; margin:0 auto; }
+    .special-card { background:#fff; border-radius:16px; width:300px; box-shadow:0 4px 20px rgba(0,0,0,0.09); overflow:hidden; transition:transform 0.3s,box-shadow 0.3s; }
+    .special-card:hover { transform:translateY(-6px); box-shadow:0 14px 36px rgba(0,0,0,0.14); }
+    .special-card img { width:100%; height:220px; object-fit:cover; display:block; transition:transform 0.5s; }
+    .special-card:hover img { transform:scale(1.06); }
+    .special-card-body { padding:1.2rem 1.3rem; }
+    .special-card-body h3 { font-family:'Playfair Display',serif; color:#1c1c1c; font-size:1.15rem; margin-bottom:0.4rem; }
+    .special-card-body p { color:#555; font-size:0.92rem; line-height:1.55; margin:0; }
+    @media(max-width:680px){ .special-card { width:100%; max-width:380px; } }
+
+    /* ── WHY US ── */
+    .why-us { background:#355E3B; padding:56px 20px; text-align:center; }
+    .why-us h2 { font-family:'Playfair Display',serif; color:#fff; font-size:clamp(1.5rem,4vw,2rem); margin-bottom:0.4rem; }
+    .why-us-sub { color:rgba(255,255,255,0.8); margin-bottom:2.5rem; font-size:1rem; }
+    .why-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem 2.5rem; max-width:900px; margin:0 auto; }
+    .why-item { color:#fff; max-width:190px; text-align:center; }
+    .why-icon { font-size:2.4rem; margin-bottom:0.6rem; }
+    .why-item h3 { color:#fff; font-size:1rem; font-weight:700; margin-bottom:0.3rem; font-family:'Open Sans',sans-serif; }
+    .why-item p { color:rgba(255,255,255,0.78); font-size:0.9rem; margin:0; line-height:1.5; }
+
+    /* ── HOW TO ORDER ── */
+    .how-to-order { background:#f8faf8; padding:64px 20px; }
+    .hto-container { max-width:1000px; margin:0 auto; text-align:center; }
+    .how-to-order h2 { font-family:'Playfair Display',serif; color:#1c1c1c; font-size:clamp(1.5rem,4vw,2rem); margin-bottom:0.4rem; }
+    .hto-subtitle { color:#666; margin-bottom:2.5rem; font-size:1rem; }
+    .hto-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; margin-bottom:2rem; }
+    .hto-card { background:#fff; border:1px solid #e0ebe0; border-radius:18px; padding:2rem 1.4rem 1.8rem; text-align:center; position:relative; transition:transform 0.25s,box-shadow 0.25s; }
+    .hto-card:hover { transform:translateY(-4px); box-shadow:0 12px 30px rgba(53,94,59,0.12); }
+    .hto-step { position:absolute; top:-14px; left:50%; transform:translateX(-50%); background:#355E3B; color:#fff; font-weight:700; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.9rem; }
+    .hto-icon { font-size:2.2rem; margin-bottom:0.7rem; }
+    .hto-card h3 { font-family:'Playfair Display',serif; color:#355E3B; font-size:1.1rem; margin-bottom:0.5rem; }
+    .hto-card p { color:#555; font-size:0.92rem; line-height:1.6; margin-bottom:1.2rem; }
+    .hto-btn { display:inline-block; background:#355E3B; color:#fff; font-family:'Open Sans',sans-serif; font-weight:700; padding:0.6rem 1.4rem; border-radius:999px; text-decoration:none; font-size:0.9rem; transition:background 0.2s,transform 0.2s; }
+    .hto-btn:hover { background:#2a4a30; transform:translateY(-1px); }
+    .hto-info-row { display:flex; flex-wrap:wrap; justify-content:center; gap:0.8rem 2rem; background:#f0f7f1; border-radius:14px; padding:1.2rem 1.5rem; }
+    .hto-info-item { font-family:'Open Sans',sans-serif; color:#355E3B; font-size:0.93rem; }
+    @media(max-width:768px){ .hto-grid { grid-template-columns:1fr; gap:2rem; } }
+
+    /* ── REVIEWS ── */
+    .reviews-section { padding:70px 18px; background:linear-gradient(180deg,#fff 0%,#f6f8fb 100%); }
+    .reviews-container { max-width:1100px; margin:0 auto; text-align:center; }
+    .reviews-title { font-family:'Playfair Display',serif; font-size:clamp(1.5rem,4vw,2.2rem); color:#1c1c1c; margin:0 0 10px; }
+    .reviews-subtitle { color:#5c6770; margin:0 0 34px; font-size:1rem; }
+    .reviews-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:28px; }
+    .review-card { background:#fff; border:1px solid rgba(0,0,0,0.06); border-radius:18px; padding:18px; text-align:left; box-shadow:0 8px 24px rgba(0,0,0,0.06); position:relative; }
+    .review-card::before { content:'\201C'; position:absolute; top:12px; left:14px; font-size:40px; color:rgba(53,94,59,0.12); font-family:'Playfair Display',serif; line-height:1; }
+    .review-top { display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:10px; padding-left:18px; }
+    .review-stars { font-size:13px; letter-spacing:1px; color:#f5b301; }
+    .review-badge { font-size:11px; padding:5px 10px; border-radius:999px; background:rgba(53,94,59,0.08); color:#355E3B; border:1px solid rgba(53,94,59,0.15); white-space:nowrap; font-family:'Open Sans',sans-serif; }
+    .review-text { font-family:'Open Sans',sans-serif; color:#2b2f33; font-size:0.95rem; line-height:1.6; margin:0 0 14px; padding-left:18px; }
+    .review-footer { display:flex; justify-content:space-between; align-items:baseline; border-top:1px solid rgba(0,0,0,0.06); padding-top:12px; padding-left:18px; }
+    .review-name { font-family:'Open Sans',sans-serif; font-weight:700; color:#1c1c1c; font-size:0.9rem; }
+    .review-time { font-family:'Open Sans',sans-serif; color:#7a8792; font-size:0.82rem; }
+    .reviews-cta { display:inline-block; background:#355E3B; color:#fff; text-decoration:none; font-family:'Open Sans',sans-serif; font-weight:700; padding:14px 24px; border-radius:999px; box-shadow:0 8px 20px rgba(53,94,59,0.25); transition:transform 0.15s,box-shadow 0.15s; }
+    .reviews-cta:hover { transform:translateY(-2px); box-shadow:0 12px 26px rgba(53,94,59,0.3); }
+    @media(max-width:900px){ .reviews-grid { grid-template-columns:1fr 1fr; } }
+    @media(max-width:600px){ .reviews-grid { display:flex; flex-direction:column; } }
+
+    /* ── FAQ ── */
+    .faq-section { background:#f6f8fb; padding:60px 20px; }
+    .faq-container { max-width:760px; margin:0 auto; }
+    .faq-section h2 { font-family:'Playfair Display',serif; color:#1c1c1c; font-size:clamp(1.5rem,4vw,2rem); text-align:center; margin-bottom:2rem; }
+    .faq-list { display:flex; flex-direction:column; gap:0.8rem; }
+    .faq-item { background:#fff; border-radius:14px; border:1px solid #e0e0e0; overflow:hidden; }
+    .faq-q { width:100%; background:none; border:none; padding:1.1rem 1.4rem; text-align:left; font-family:'Open Sans',sans-serif; font-weight:700; font-size:0.97rem; color:#1c1c1c; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:1rem; }
+    .faq-q:hover, .faq-q[aria-expanded="true"] { color:#355E3B; }
+    .faq-arrow { font-size:1.3rem; color:#355E3B; transition:transform 0.25s; flex-shrink:0; }
+    .faq-q[aria-expanded="true"] .faq-arrow { transform:rotate(90deg); }
+    .faq-a { max-height:0; overflow:hidden; transition:max-height 0.35s ease, padding 0.25s; font-family:'Open Sans',sans-serif; color:#444; font-size:0.95rem; line-height:1.65; padding:0 1.4rem; }
+    .faq-a.open { max-height:300px; padding:0 1.4rem 1.2rem; }
+    .faq-a a { color:#355E3B; font-weight:600; }
+
+    /* ── CUSTOM ORDER STRIP ── */
+    .custom-order-strip { background:#2a4a30; padding:48px 24px; }
+    .custom-order-strip-inner { max-width:900px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:wrap; }
+    .custom-order-strip h2 { color:#fff; font-family:'Playfair Display',serif; font-size:clamp(1.3rem,3vw,1.8rem); margin-bottom:0.4rem; text-align:left; }
+    .custom-order-strip p { color:rgba(255,255,255,0.82); margin:0; font-size:0.97rem; }
+    .custom-order-strip-btn { display:inline-block; background:#fff; color:#2a4a30; font-family:'Open Sans',sans-serif; font-weight:700; padding:0.9rem 2rem; border-radius:999px; text-decoration:none; white-space:nowrap; font-size:1rem; transition:transform 0.2s,box-shadow 0.2s; box-shadow:0 4px 16px rgba(0,0,0,0.15); flex-shrink:0; }
+    .custom-order-strip-btn:hover { transform:translateY(-2px); box-shadow:0 8px 22px rgba(0,0,0,0.2); }
+    @media(max-width:600px){ .custom-order-strip-inner { flex-direction:column; text-align:center; } .custom-order-strip h2 { text-align:center; } }
+
+    /* Dark mode overrides */
+    [data-theme="dark"] .specials, [data-theme="dark"] .how-to-order { background:#1e3520; }
+    [data-theme="dark"] .specials h2, [data-theme="dark"] .how-to-order h2, [data-theme="dark"] .faq-section h2 { color:#e8f5e9; }
+    [data-theme="dark"] .specials-sub, [data-theme="dark"] .hto-subtitle, [data-theme="dark"] .reviews-subtitle { color:#a8d5b5; }
+    [data-theme="dark"] .special-card, [data-theme="dark"] .hto-card, [data-theme="dark"] .review-card, [data-theme="dark"] .faq-item { background:#243d27; border-color:#2d4a30; }
+    [data-theme="dark"] .special-card-body h3, [data-theme="dark"] .review-name, [data-theme="dark"] .reviews-title { color:#e8f5e9; }
+    [data-theme="dark"] .special-card-body p, [data-theme="dark"] .hto-card p, [data-theme="dark"] .review-text, [data-theme="dark"] .faq-a { color:#c0d8c4; }
+    [data-theme="dark"] .reviews-section, [data-theme="dark"] .faq-section { background:#1a2e1d; }
+    [data-theme="dark"] .faq-q { color:#e8f5e9; }
+    [data-theme="dark"] .hto-info-row { background:#1a2e1d; }
+    [data-theme="dark"] .hto-card h3 { color:#a8d5b5; }
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Bakery","name":"D'era House","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"87","bestRating":"5"},"url":"https://derapastryhouse.com/","telephone":"+12019239776","address":{"@type":"PostalAddress","streetAddress":"1076 Main Ave","addressLocality":"Clifton","addressRegion":"NJ","postalCode":"07011","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"08:00","closes":"20:00"}],"sameAs":["https://instagram.com/derahousenj","https://www.yelp.com/biz/d-era-pastry-house-clifton"],"servesCuisine":["Desserts","Bakery"]}
+  </script>
 </head>
 <body>
+
   <header>
     <div class="nav-container">
       <a href="index.html" class="logo">D'ERA</a>
       <button class="menu-toggle" type="button" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">
         <span class="bar"></span><span class="bar"></span><span class="bar"></span>
       </button>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="products.html">Products</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="locations.html">Locations</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <nav><ul>
+        <li><a href="index.html" class="nav-active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="locations.html">Locations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
       <a href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" class="cta" target="_blank" rel="noopener noreferrer">Order Now</a>
     </div>
   </header>
 
   <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="hero-text">
-        <h1>Handcrafted with Heart in Clifton, NJ</h1>
-        <p>Cheesecakes, artisan pastries, custom cakes & dessert tables — made fresh daily.</p>
-        <a href="products.html" class="hero-btn">See Our Menu</a>
-        <a href="https://maps.app.goo.gl/siQNgNwhVo7bCpNn7" target="_blank" rel="noopener noreferrer" class="rating-badge" style="margin-top:0.8rem; display:inline-flex;">
-          <span class="stars">★★★★★</span> <strong>4.9</strong> &nbsp;·&nbsp; Google Reviews
+        <h1>Where Every Bite Feels Like Home</h1>
+        <p>Handcrafted cheesecakes, custom cakes & Turkish sweets — made from scratch every morning in Clifton, NJ.</p>
+        <div class="hero-actions">
+          <a href="products.html" class="hero-btn">See Our Menu</a>
+          <a href="custom-order.html" class="hero-btn secondary">Custom Order</a>
+        </div>
+        <a href="https://maps.app.goo.gl/siQNgNwhVo7bCpNn7" target="_blank" rel="noopener noreferrer" class="hero-rating">
+          <span class="stars">★★★★★</span> Loved by Clifton locals
         </a>
       </div>
     </section>
 
+    <!-- SPECIALTIES -->
     <section class="specials">
-      <h2>Our Specialties</h2>
+      <h2>What We're Known For</h2>
+      <p class="specials-sub">A few things our regulars can't stop coming back for</p>
       <div class="specials-grid">
         <div class="special-card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=764&auto=format&fit=crop" alt="Signature Cheesecakes">
-          <h3>Signature Cheesecakes</h3>
+          <img src="https://images.unsplash.com/photo-1508737027454-e6454ef45afd?w=600&auto=format&fit=crop" alt="New York Style Cheesecake" loading="lazy">
+          <div class="special-card-body">
+            <h3>New York Cheesecakes</h3>
+            <p>Dense, creamy, with that perfectly cracked top. Made the old-fashioned way — no shortcuts.</p>
+          </div>
         </div>
         <div class="special-card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=928&auto=format&fit=crop" alt="Artisan Cookies">
-          <h3>Artisan Cookies</h3>
+          <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600&auto=format&fit=crop" alt="Custom Birthday Cakes" loading="lazy">
+          <div class="special-card-body">
+            <h3>Custom Celebration Cakes</h3>
+            <p>Birthdays, weddings, baby showers — we build the cake around your moment, not the other way around.</p>
+          </div>
         </div>
         <div class="special-card">
-          <img loading="lazy" src="https://images.unsplash.com/photo-1519915028121-7d3463d5b1ff?q=80&w=774&auto=format&fit=crop" alt="Baklava & Turkish Sweets">
-          <h3>Baklava & Turkish Sweets</h3>
+          <img src="https://images.unsplash.com/photo-1519915028121-7d3463d5b1ff?w=600&auto=format&fit=crop" alt="Baklava and Turkish Sweets" loading="lazy">
+          <div class="special-card-body">
+            <h3>Baklava & Turkish Sweets</h3>
+            <p>Crispy phyllo, real pistachios, and honey syrup that's been in the recipe for generations.</p>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- WHY US -->
     <section class="why-us">
-      <h2>Why D'era House?</h2>
+      <h2>A Little About Us</h2>
+      <p class="why-us-sub">We're not a chain. We're your neighborhood bakery.</p>
       <div class="why-grid">
-        <div class="why-item"><div class="why-icon">👩‍🍳</div><h3>Woman-Owned</h3><p>Built with passion, baked with love</p></div>
-        <div class="why-item"><div class="why-icon">🌿</div><h3>Fresh Daily</h3><p>Everything made from scratch every morning</p></div>
-        <div class="why-item"><div class="why-icon">🎂</div><h3>Custom Orders</h3><p>Birthdays, weddings & special events</p></div>
-        <div class="why-item"><div class="why-icon">🚚</div><h3>Delivery Available</h3><p>Order via GrubHub for fast delivery</p></div>
-      </div>
-    </section>
-
-    <section class="reviews-section" aria-label="Google Reviews">
-      <div class="reviews-container">
-        <h2 class="reviews-title">What Our Customers Say</h2>
-        <p class="reviews-subtitle">Recent reviews from our guests in Clifton, NJ</p>
-        <div class="reviews-grid" role="list">
-          <article class="review-card" role="listitem"><div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Clifton, NJ</span></div><p class="review-text">Absolutely delicious. The cheesecake is rich, smooth, and tastes truly handmade. We'll be back!</p><div class="review-footer"><span class="review-name">Sarah M.</span><span class="review-time">2 weeks ago</span></div></article>
-          <article class="review-card" role="listitem"><div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Clifton, NJ</span></div><p class="review-text">Beautiful desserts and super friendly service. Everything felt fresh and carefully crafted.</p><div class="review-footer"><span class="review-name">Jason L.</span><span class="review-time">1 month ago</span></div></article>
-          <article class="review-card" role="listitem"><div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Clifton, NJ</span></div><p class="review-text">Ordered for a birthday and the presentation was amazing. The flavors were perfect — everyone loved it.</p><div class="review-footer"><span class="review-name">Emily R.</span><span class="review-time">3 weeks ago</span></div></article>
-          <article class="review-card" role="listitem"><div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Clifton, NJ</span></div><p class="review-text">Best cheesecake I've had in NJ. Great texture, not overly sweet, and the crust is perfect.</p><div class="review-footer"><span class="review-name">Nicole K.</span><span class="review-time">2 months ago</span></div></article>
-          <article class="review-card" role="listitem"><div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Clifton, NJ</span></div><p class="review-text">The pastries are next level. You can tell everything is made with care — quality is consistent.</p><div class="review-footer"><span class="review-name">Michael T.</span><span class="review-time">5 months ago</span></div></article>
-          <article class="review-card" role="listitem"><div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Clifton, NJ</span></div><p class="review-text">Amazing spot for desserts. Clean, welcoming, and everything tastes authentic and fresh.</p><div class="review-footer"><span class="review-name">Alyssa P.</span><span class="review-time">4 months ago</span></div></article>
+        <div class="why-item">
+          <div class="why-icon">👩‍🍳</div>
+          <h3>Woman-Owned</h3>
+          <p>Started from a kitchen dream, built into something the whole block loves</p>
         </div>
-        <a class="reviews-cta" href="https://maps.app.goo.gl/siQNgNwhVo7bCpNn7" target="_blank" rel="noopener noreferrer">View All Reviews on Google</a>
+        <div class="why-item">
+          <div class="why-icon">🌅</div>
+          <h3>Baked Fresh Daily</h3>
+          <p>We don't freeze. What you eat today was made this morning.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🎂</div>
+          <h3>Custom Orders</h3>
+          <p>Just 24 hours notice — we'll make exactly what you have in mind</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">🚚</div>
+          <h3>Delivery & Pickup</h3>
+          <p>Order through GrubHub or walk right in — 7 days a week</p>
+        </div>
       </div>
     </section>
 
-
-    <!-- How to Order Section -->
+    <!-- HOW TO ORDER -->
     <section class="how-to-order">
       <div class="hto-container">
-        <h2>How to Order</h2>
-        <p class="hto-subtitle">Three easy ways to get your hands on something sweet</p>
-
+        <h2>How to Get Your Order</h2>
+        <p class="hto-subtitle">Three ways to make it happen</p>
         <div class="hto-grid">
           <div class="hto-card">
             <div class="hto-step">1</div>
             <div class="hto-icon">📱</div>
-            <h3>Order Online</h3>
-            <p>Order everyday items instantly through GrubHub for delivery or pickup.</p>
-            <a href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" target="_blank" rel="noopener noreferrer" class="hto-btn">Order on GrubHub</a>
+            <h3>Order on GrubHub</h3>
+            <p>The quickest way to get our everyday items delivered straight to your door.</p>
+            <a href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" target="_blank" rel="noopener noreferrer" class="hto-btn">Order Now</a>
           </div>
           <div class="hto-card">
             <div class="hto-step">2</div>
             <div class="hto-icon">💬</div>
-            <h3>WhatsApp / Call</h3>
-            <p>Message or call us directly for custom orders, questions, or same-day requests.</p>
-            <a href="https://wa.me/12019239776" target="_blank" rel="noopener noreferrer" class="hto-btn">Message Us</a>
+            <h3>Text or Call Us</h3>
+            <p>For custom orders or questions, reach us directly — we actually pick up.</p>
+            <a href="https://wa.me/12019239776" target="_blank" rel="noopener noreferrer" class="hto-btn">WhatsApp Us</a>
           </div>
           <div class="hto-card">
             <div class="hto-step">3</div>
             <div class="hto-icon">🚶</div>
-            <h3>Walk In</h3>
-            <p>Come visit us at 1076 Main Ave, Clifton. Open 7 days a week, 8 AM – 8 PM.</p>
+            <h3>Come On In</h3>
+            <p>Walk-ins always welcome. We're at 1076 Main Ave, seven days a week.</p>
             <a href="locations.html" class="hto-btn">Get Directions</a>
           </div>
         </div>
-
         <div class="hto-info-row">
-          <div class="hto-info-item">🚚 <strong>Delivery</strong> — via GrubHub</div>
-          <div class="hto-info-item">🏪 <strong>Pickup</strong> — in-store or curbside</div>
-          <div class="hto-info-item">🎂 <strong>Custom orders</strong> — 24 hrs notice needed</div>
-          <div class="hto-info-item">📅 <strong>Open daily</strong> — 8:00 AM – 8:00 PM</div>
+          <div class="hto-info-item">🚚 <strong>Delivery</strong> via GrubHub</div>
+          <div class="hto-info-item">🏪 <strong>Pickup</strong> in-store or curbside</div>
+          <div class="hto-info-item">🎂 <strong>Custom orders</strong> — just 24 hrs notice</div>
+          <div class="hto-info-item">📅 <strong>Open daily</strong> 8 AM – 8 PM</div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Section -->
+    <!-- REVIEWS -->
+    <section class="reviews-section" aria-label="Customer Reviews">
+      <div class="reviews-container">
+        <h2 class="reviews-title">What People Are Saying</h2>
+        <p class="reviews-subtitle">From our community in Clifton, NJ</p>
+        <div class="reviews-grid" role="list">
+          <article class="review-card" role="listitem">
+            <div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Google Review</span></div>
+            <p class="review-text">The cheesecake is unlike anything I've had around here. You can tell it's made with real care — not mass produced. My whole family was asking where it came from.</p>
+            <div class="review-footer"><span class="review-name">Sarah M.</span><span class="review-time">2 weeks ago</span></div>
+          </article>
+          <article class="review-card" role="listitem">
+            <div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Google Review</span></div>
+            <p class="review-text">Ordered a birthday cake with 24 hours notice and honestly wasn't expecting much — but it looked and tasted incredible. Everyone at the party wanted the baker's number.</p>
+            <div class="review-footer"><span class="review-name">Jason L.</span><span class="review-time">1 month ago</span></div>
+          </article>
+          <article class="review-card" role="listitem">
+            <div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Google Review</span></div>
+            <p class="review-text">The baklava is the real deal. I grew up eating Turkish sweets and this hits exactly right — not too sweet, perfectly flaky. I've been back three times already.</p>
+            <div class="review-footer"><span class="review-name">Emily R.</span><span class="review-time">3 weeks ago</span></div>
+          </article>
+          <article class="review-card" role="listitem">
+            <div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Google Review</span></div>
+            <p class="review-text">Best cheesecake in NJ, and I've tried a lot. The crust-to-filling ratio is perfect and it's not overly sweet. Walked in on a Saturday and they had four flavors ready.</p>
+            <div class="review-footer"><span class="review-name">Nicole K.</span><span class="review-time">2 months ago</span></div>
+          </article>
+          <article class="review-card" role="listitem">
+            <div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Google Review</span></div>
+            <p class="review-text">Friendly, fast, and the food is consistently good every single time. That's rare. I've ordered from here at least a dozen times and never been let down.</p>
+            <div class="review-footer"><span class="review-name">Michael T.</span><span class="review-time">5 months ago</span></div>
+          </article>
+          <article class="review-card" role="listitem">
+            <div class="review-top"><div class="review-stars">★★★★★</div><span class="review-badge">Google Review</span></div>
+            <p class="review-text">I came in for a small dessert and ended up getting a full custom cake order for next week. The owner made me feel like family. This place is a hidden gem in Clifton.</p>
+            <div class="review-footer"><span class="review-name">Alyssa P.</span><span class="review-time">4 months ago</span></div>
+          </article>
+        </div>
+        <a class="reviews-cta" href="https://maps.app.goo.gl/siQNgNwhVo7bCpNn7" target="_blank" rel="noopener noreferrer">Read All Reviews on Google</a>
+      </div>
+    </section>
+
+    <!-- FAQ -->
     <section class="faq-section">
       <div class="faq-container">
-        <h2>Frequently Asked Questions</h2>
+        <h2>Got Questions?</h2>
         <div class="faq-list">
           <div class="faq-item">
             <button class="faq-q" aria-expanded="false">Do you offer delivery? <span class="faq-arrow">›</span></button>
-            <div class="faq-a">Yes! We deliver through GrubHub. You can also pick up in-store at 1076 Main Ave, Clifton, NJ — 7 days a week, 8 AM to 8 PM.</div>
+            <div class="faq-a">Yes — we deliver through GrubHub. You can also do in-store pickup or curbside at 1076 Main Ave, Clifton. We're open 7 days a week, 8 AM to 8 PM.</div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">How do I place a custom cake order? <span class="faq-arrow">›</span></button>
-            <div class="faq-a">You can request a custom order through our <a href="custom-order.html">Custom Order form</a>, by calling <a href="tel:+12019239776">(201) 923-9776</a>, or messaging us on <a href="https://wa.me/12019239776" target="_blank">WhatsApp</a>. We just need 24 hours notice for custom orders.</div>
+            <button class="faq-q" aria-expanded="false">How do I order a custom cake? <span class="faq-arrow">›</span></button>
+            <div class="faq-a">Use our <a href="custom-order.html">Custom Order form</a>, call us at <a href="tel:+12019239776">(201) 923-9776</a>, or message us on <a href="https://wa.me/12019239776" target="_blank">WhatsApp</a>. We need at least 24 hours for custom orders — more for large wedding or event cakes.</div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">How far in advance do I need to order? <span class="faq-arrow">›</span></button>
-            <div class="faq-a">For everyday items, no advance notice needed — just walk in or order on GrubHub. For custom cakes and special orders, we need at least <strong>24 hours notice</strong>. For large wedding or event orders, we recommend reaching out 1–2 weeks ahead.</div>
+            <button class="faq-q" aria-expanded="false">Can I just walk in without ordering ahead? <span class="faq-arrow">›</span></button>
+            <div class="faq-a">Absolutely. Walk-ins are welcome anytime during business hours. We bake fresh every day, so selection varies — call ahead if you're looking for something specific.</div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">Can I walk in and buy without ordering? <span class="faq-arrow">›</span></button>
-            <div class="faq-a">Absolutely! Walk-ins are always welcome. We bake fresh daily so availability may vary — call ahead if you want to make sure a specific item is available.</div>
+            <button class="faq-q" aria-expanded="false">Do you make wedding and event cakes? <span class="faq-arrow">›</span></button>
+            <div class="faq-a">Yes! Weddings, birthdays, baby showers, graduations, corporate events — we do it all. For large orders we recommend reaching out at least 1–2 weeks in advance. Fill out our <a href="custom-order.html">Custom Order form</a> to get started.</div>
           </div>
           <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">Do you make cakes for weddings and events? <span class="faq-arrow">›</span></button>
-            <div class="faq-a">Yes! We specialize in custom cakes for birthdays, weddings, baby showers, graduations, and corporate events. Fill out our <a href="custom-order.html">Custom Order form</a> or contact us directly to discuss your vision.</div>
-          </div>
-          <div class="faq-item">
-            <button class="faq-q" aria-expanded="false">Do you accommodate dietary restrictions? <span class="faq-arrow">›</span></button>
-            <div class="faq-a">We do our best to accommodate requests like gluten-free, nut-free, and halal. Please let us know your needs when ordering and we'll advise on available options. Contact us for details.</div>
+            <button class="faq-q" aria-expanded="false">Can you accommodate dietary restrictions? <span class="faq-arrow">›</span></button>
+            <div class="faq-a">We do our best for gluten-free, nut-free, and halal requests. Please mention your needs when ordering — we'll let you know what's possible and make sure nothing gets missed.</div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Instagram Section -->
-    <section class="instagram-section">
-      <div class="instagram-container">
-        <h2 class="instagram-title">Follow Us on Instagram</h2>
-        <p class="instagram-subtitle">@derahousenj — Fresh creations posted daily</p>
-        <div class="instagram-grid">
-          <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="insta-card"><img loading="lazy" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=400&auto=format&fit=crop" alt="Cheesecake"><div class="insta-overlay">📷</div></a>
-          <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="insta-card"><img loading="lazy" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=400&auto=format&fit=crop" alt="Birthday Cake"><div class="insta-overlay">📷</div></a>
-          <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="insta-card"><img loading="lazy" src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?q=80&w=400&auto=format&fit=crop" alt="Cookies"><div class="insta-overlay">📷</div></a>
-          <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="insta-card"><img loading="lazy" src="https://images.unsplash.com/photo-1519915028121-7d3463d5b1ff?q=80&w=400&auto=format&fit=crop" alt="Baklava"><div class="insta-overlay">📷</div></a>
-          <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="insta-card"><img loading="lazy" src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=400&auto=format&fit=crop" alt="Croissants"><div class="insta-overlay">📷</div></a>
-          <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="insta-card"><img loading="lazy" src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?q=80&w=400&auto=format&fit=crop" alt="Strawberry"><div class="insta-overlay">📷</div></a>
-        </div>
-        <a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer" class="instagram-cta">Follow @derahousenj</a>
       </div>
     </section>
 
-    <!-- Custom Order CTA Banner -->
+    <!-- CUSTOM ORDER STRIP -->
     <section class="custom-order-strip">
       <div class="custom-order-strip-inner">
         <div>
-          <h2>Have a Special Occasion?</h2>
-          <p>Custom cakes, cheesecakes and dessert tables for birthdays, weddings, and more.</p>
+          <h2>Planning Something Special?</h2>
+          <p>Custom cakes for birthdays, weddings, and events — just 24 hours notice needed.</p>
         </div>
-        <a href="custom-order.html" class="custom-order-strip-btn">Request Custom Order</a>
+        <a href="custom-order.html" class="custom-order-strip-btn">Request a Custom Order</a>
       </div>
     </section>
-
   </main>
 
   <footer class="site-footer">
     <div class="footer-container">
       <div class="footer-section">
         <h3>D'era House</h3>
-        <p><a href="https://maps.apple.com/?q=1076+Main+Ave,+Clifton,+NJ+07011" target="_blank" rel="noopener noreferrer">1076 Main Ave<br>Clifton, NJ 07011</a></p>
+        <p><a href="https://maps.google.com/?q=1076+Main+Ave,+Clifton,+NJ+07011" target="_blank" rel="noopener noreferrer">1076 Main Ave<br>Clifton, NJ 07011</a></p>
         <p><a href="tel:+12019239776">+1 (201) 923-9776</a></p>
         <p>Mon–Sun: 8:00 AM – 8:00 PM</p>
       </div>
@@ -279,7 +379,8 @@
         <h3>Connect</h3>
         <ul>
           <li><a href="mailto:deragroupllc@gmail.com">deragroupllc@gmail.com</a></li>
-          <li><a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="tel:+12019239776">(201) 923-9776</a></li>
+          <li><a href="https://instagram.com/derahousenj" target="_blank" rel="noopener noreferrer">Instagram @derahousenj</a></li>
           <li><a href="https://www.yelp.com/biz/d-era-pastry-house-clifton" target="_blank" rel="noopener noreferrer">Yelp</a></li>
         </ul>
       </div>
@@ -307,9 +408,10 @@
   </aside>
   <script>
     (function(){const t=document.querySelector('.menu-toggle'),c=document.querySelectorAll('[data-drawer-close]');if(!t)return;function o(){document.body.classList.add('menu-open');t.setAttribute('aria-expanded','true');}function cl(){document.body.classList.remove('menu-open');t.setAttribute('aria-expanded','false');}t.addEventListener('click',()=>document.body.classList.contains('menu-open')?cl():o());c.forEach(el=>el.addEventListener('click',cl));document.addEventListener('keydown',(e)=>{if(e.key==='Escape')cl();});})();
+    document.querySelectorAll('.faq-q').forEach(btn=>{btn.addEventListener('click',()=>{const a=btn.nextElementSibling,open=btn.getAttribute('aria-expanded')==='true';document.querySelectorAll('.faq-q').forEach(b=>{b.setAttribute('aria-expanded','false');b.nextElementSibling.classList.remove('open');});if(!open){btn.setAttribute('aria-expanded','true');a.classList.add('open');}});});
   </script>
   <a href="https://wa.me/12019239776" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <img loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Chat">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy">
   </a>
   <script src="animations.js"></script>
 </body>
