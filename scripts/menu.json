@@ -1,5 +1,5 @@
 {
-  "scraped_at": "2026-07-27T11:14:49.152Z",
+  "scraped_at": "2026-08-03T11:16:44.181Z",
   "total": 86,
   "categories": {
     "BEST SELLERS": [
@@ -8,6 +8,12 @@
         "desc": "",
         "price": "$5.00",
         "img": ""
+      },
+      {
+        "name": "Trilece – Slice",
+        "desc": "",
+        "price": "$11.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rwk2fevwiks9jkxy80oj"
       },
       {
         "name": "Chocolate Fudge Cake – Slice",
@@ -58,12 +64,6 @@
         "desc": "Traditional Turkish-style chocolate mosaic cake made with buttery biscuit pieces, rich cocoa, and a smooth chocolate base. Finished with a touch of our signature European-style chocolate pastry cream for a velvety, premium texture. Served chilled",
         "price": "$11.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/vtmaa9ghnrex4b5cwhsi"
-      },
-      {
-        "name": "Trilece – Slice",
-        "desc": "Ultra-soft airy sponge soaked in a three-milk blend and topped with our signature European-style whipped pastry cream, then finished with a silky caramel glaze. Moist, light, creamy, and one of our bestselling traditional European desserts — made fresh in-house.",
-        "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rwk2fevwiks9jkxy80oj"
       },
       {
         "name": "Biscoff Lotus Cake – Whole (8\")",
@@ -142,18 +142,6 @@
         "desc": "",
         "price": "$3.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/lhehll5jiw4zfdhqrdko"
-      },
-      {
-        "name": "Banana Bread",
-        "desc": "Banana bread with moist banana slices and subtle hints of vanilla, topped with crushed walnuts.",
-        "price": "$7.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/xpcvqafx0wrkbipknbys"
-      },
-      {
-        "name": "Butter Croissant",
-        "desc": "Flaky, buttery French croissant baked fresh daily.",
-        "price": "$5.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zi6uodo16gmkn9yyd8qs"
       }
     ],
     "BREAKFAST PASTRIES": [
@@ -168,6 +156,18 @@
         "desc": "Golden Danish pastry filled with smooth, lightly sweetened cream cheese. Buttery, creamy, and perfectly balanced",
         "price": "$5.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/wocfxzd7ftwnx5i7u3rc"
+      },
+      {
+        "name": "Banana Bread",
+        "desc": "Banana bread with moist banana slices and subtle hints of vanilla, topped with crushed walnuts.",
+        "price": "$7.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/xpcvqafx0wrkbipknbys"
+      },
+      {
+        "name": "Butter Croissant",
+        "desc": "Flaky, buttery French croissant baked fresh daily.",
+        "price": "$5.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zi6uodo16gmkn9yyd8qs"
       },
       {
         "name": "Almond Croissant",
