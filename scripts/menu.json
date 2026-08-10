@@ -1,6 +1,6 @@
 {
-  "scraped_at": "2026-08-03T11:16:44.181Z",
-  "total": 86,
+  "scraped_at": "2026-08-10T09:12:39.581Z",
+  "total": 84,
   "categories": {
     "BEST SELLERS": [
       {
@@ -10,10 +10,10 @@
         "img": ""
       },
       {
-        "name": "Trilece – Slice",
+        "name": "Strawberry Cheesecake – Slice",
         "desc": "",
         "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rwk2fevwiks9jkxy80oj"
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/jljbfkm5nvagot0gflmi"
       },
       {
         "name": "Chocolate Fudge Cake – Slice",
@@ -22,10 +22,22 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/vmgmw62btqtliq9u0iex"
       },
       {
-        "name": "Biscoff Lotus Cake – Slice",
+        "name": "Almond Croissant",
         "desc": "",
-        "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/sx8rvolme7pg5zvhsy9r"
+        "price": "$5.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/bqxu8cljcvuzmmuaftrj"
+      },
+      {
+        "name": "Chocolate Chip Cookie",
+        "desc": "",
+        "price": "$4.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/cylajmd3nabbnnnfhidi"
+      },
+      {
+        "name": "Spinach & Feta Puff",
+        "desc": "Crispy golden puff pastry filled with spinach, feta, herbs, and seasoning. Savory, filling, and vegetarian-friendly.",
+        "price": "$5.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/oakvbv7hiuittmyiaegy"
       }
     ],
     "CAKES (SLICE & WHOLE)": [
@@ -34,6 +46,12 @@
         "desc": "🍓 Strawberry Shortcake (5.5”) A light and elegant strawberry shortcake made with layers of soft vanilla sponge cake, fresh sliced strawberries, silky vanilla cream, and a homemade strawberry topping. Perfect for birthdays, small celebrations, date nights, or a sweet treat to share. ✔ Fresh strawberries ✔ Homemade vanilla cream ✔ Made to order ✔ Custom message included Serves 4–6 people.",
         "price": "$40.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/g24sjgtjzeh30dg9omck"
+      },
+      {
+        "name": "Biscoff Lotus Cake – Slice",
+        "desc": "Soft vanilla sponge filled with our signature European-style Biscoff pastry cream, giving a silky caramelized cookie flavor in every bite. Finished with Lotus cookie crumble and Biscoff drizzle. Smooth, rich, addictive.",
+        "price": "$11.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/sx8rvolme7pg5zvhsy9r"
       },
       {
         "name": "Carrot Cake – Slice",
@@ -60,10 +78,10 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/ux8hb4uiy5ptt2z0vuoy"
       },
       {
-        "name": "Mozaik Cake – Slice",
-        "desc": "Traditional Turkish-style chocolate mosaic cake made with buttery biscuit pieces, rich cocoa, and a smooth chocolate base. Finished with a touch of our signature European-style chocolate pastry cream for a velvety, premium texture. Served chilled",
+        "name": "Trilece – Slice",
+        "desc": "Ultra-soft airy sponge soaked in a three-milk blend and topped with our signature European-style whipped pastry cream, then finished with a silky caramel glaze. Moist, light, creamy, and one of our bestselling traditional European desserts — made fresh in-house.",
         "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/vtmaa9ghnrex4b5cwhsi"
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rwk2fevwiks9jkxy80oj"
       },
       {
         "name": "Biscoff Lotus Cake – Whole (8\")",
@@ -132,12 +150,6 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/tqg5lgjipgck0g0avgnv"
       },
       {
-        "name": "Spinach & Feta Puff",
-        "desc": "Crispy golden puff pastry filled with spinach, feta, herbs, and seasoning. Savory, filling, and vegetarian-friendly.",
-        "price": "$5.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/oakvbv7hiuittmyiaegy"
-      },
-      {
         "name": "Bagel",
         "desc": "",
         "price": "$3.00",
@@ -170,22 +182,10 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zi6uodo16gmkn9yyd8qs"
       },
       {
-        "name": "Almond Croissant",
-        "desc": "Buttery laminated croissant filled with rich house-made almond frangipane and finished with golden toasted almonds. Slightly sweet and aromatic.",
-        "price": "$5.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/bqxu8cljcvuzmmuaftrj"
-      },
-      {
         "name": "Profiteroles",
         "desc": "Cream puff decorated with rich chocolate sauce",
         "price": "$9.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/inae3ifjh8pzqg9pdu32"
-      },
-      {
-        "name": "Chocolate Éclair (2)",
-        "desc": "Light and airy choux pastry filled with our signature European-style pastry cream and topped with silky chocolate glaze. A classic, elegant dessert.",
-        "price": "$6.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/wsckxrz2oemwctq1vkjw"
       },
       {
         "name": "Fruit Tart (5)",
@@ -234,12 +234,6 @@
         "desc": "Creamy New York–style cheesecake blended with our signature European-style whipped pastry cream for a silky, smooth finish. Light vanilla aroma, rich texture, baked fresh in-house.",
         "price": "$11.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/igcgmv7qobv3jucburrm"
-      },
-      {
-        "name": "Strawberry Cheesecake – Slice",
-        "desc": "Silky cheesecake topped with house-made strawberry sauce and finished with a touch of European-style whipped pastry cream. Creamy, fruity, and perfectly balanced.",
-        "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/jljbfkm5nvagot0gflmi"
       },
       {
         "name": "M&M Cheesecake – Whole ( 8″)",
@@ -420,12 +414,6 @@
     ],
     "COOKIES": [
       {
-        "name": "Chocolate Chip Cookie",
-        "desc": "Rich chocolate chunks in a classic, chewy cookie.",
-        "price": "$4.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/cylajmd3nabbnnnfhidi"
-      },
-      {
         "name": "White Chocolate Cookie",
         "desc": "Soft cookie with chunks of sweet white chocolate.",
         "price": "$4.50",
@@ -467,12 +455,6 @@
         "name": "Custom Gift Sets",
         "desc": "Beautifully curated gift sets customized for any occasion birthdays, anniversaries, baby showers, graduations, thank-you gifts, holidays, corporate events, and more. Each box is fully adjustable: choose your preferred treats, colors, themes, and size. Perfect for last-minute gifting. Customization and pricing vary by selection.",
         "price": "$0.00",
-        "img": ""
-      },
-      {
-        "name": "Strawberry shortcake",
-        "desc": "🍓 Strawberry Shortcake (5.5”) A light and elegant strawberry shortcake made with layers of soft vanilla sponge cake, fresh sliced strawberries, silky vanilla cream",
-        "price": "$40.00",
         "img": ""
       }
     ],
@@ -538,6 +520,12 @@
         "desc": "A smooth and creamy pumpkin pie baked with warm fall spices and a silky custard filling. Available in 9-inch (serves 6–8) and 12-inch (serves 10–14) sizes. Perfect for Thanksgiving tables, holiday dinners, or family gatherings. Seasonal item – limited availability. Pre-order recommended for the 12″ size.",
         "price": "$45.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/mmml8vfwfvuqadatyooi"
+      },
+      {
+        "name": "Strawberry shortcake",
+        "desc": "🍓 Strawberry Shortcake (5.5”) A light and elegant strawberry shortcake made with layers of soft vanilla sponge cake, fresh sliced strawberries, silky vanilla cream",
+        "price": "$40.00",
+        "img": ""
       }
     ],
     "MINI COLLECTIONS": [
