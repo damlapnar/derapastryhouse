@@ -1,35 +1,59 @@
 {
-  "scraped_at": "2026-08-10T09:12:39.581Z",
-  "total": 84,
+  "scraped_at": "2026-08-17T08:36:42.256Z",
+  "total": 82,
   "categories": {
     "BEST SELLERS": [
       {
-        "name": "Chocolate Croissant (Pain Au...",
+        "name": "Pistachio Baklava (4 pcs)",
+        "desc": "Layered pastry with finely chopped pistachios and sweet syrup, served as four pieces",
+        "price": "$9.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/z1w9avapv1kcmuv2qkt3"
+      },
+      {
+        "name": "Macarons (4)",
         "desc": "",
-        "price": "$5.00",
-        "img": ""
+        "price": "$11.99",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/odtgylqvknbladgxsf3p"
+      },
+      {
+        "name": "Chocolate Éclair (2)",
+        "desc": "Light and airy choux pastry filled with our signature European-style pastry cream and topped with silky chocolate glaze. A classic, elegant dessert.",
+        "price": "$6.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/wsckxrz2oemwctq1vkjw"
       },
       {
         "name": "Strawberry Cheesecake – Slice",
-        "desc": "",
+        "desc": "Silky cheesecake topped with house-made strawberry sauce and finished with a touch of European-style whipped pastry cream. Creamy, fruity, and perfectly balanced.",
         "price": "$11.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/jljbfkm5nvagot0gflmi"
       },
       {
-        "name": "Chocolate Fudge Cake – Slice",
-        "desc": "",
+        "name": "Chocolate Croissant (Pain Au Chocolat)",
+        "desc": "Classic French pain au chocolat baked golden, wrapped around premium dark chocolate batons that melt into soft layers.",
+        "price": "$5.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/fdtgbz7f4divdumwilvs"
+      },
+      {
+        "name": "Trilece – Slice",
+        "desc": "Ultra-soft airy sponge soaked in a three-milk blend and topped with our signature European-style whipped pastry cream, then finished with a silky caramel glaze. Moist, light, creamy, and one of our bestselling traditional European desserts — made fresh in-house.",
         "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/vmgmw62btqtliq9u0iex"
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rwk2fevwiks9jkxy80oj"
+      },
+      {
+        "name": "Banana Pudding",
+        "desc": "A rich, dreamy banana pudding made the NYC way – layered with fresh banana slices, fluffy vanilla pudding, and crispy vanilla wafers. Handcrafted in small batches. Served chilled. Limited daily quantity – always fresh!",
+        "price": "$11.95",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zfn7bom8lfh1bklk9rxg"
       },
       {
         "name": "Almond Croissant",
-        "desc": "",
+        "desc": "Buttery laminated croissant filled with rich house-made almond frangipane and finished with golden toasted almonds. Slightly sweet and aromatic.",
         "price": "$5.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/bqxu8cljcvuzmmuaftrj"
       },
       {
         "name": "Chocolate Chip Cookie",
-        "desc": "",
+        "desc": "Rich chocolate chunks in a classic, chewy cookie.",
         "price": "$4.50",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/cylajmd3nabbnnnfhidi"
       },
@@ -38,6 +62,12 @@
         "desc": "Crispy golden puff pastry filled with spinach, feta, herbs, and seasoning. Savory, filling, and vegetarian-friendly.",
         "price": "$5.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/oakvbv7hiuittmyiaegy"
+      },
+      {
+        "name": "Biscoff Lotus Cake – Slice",
+        "desc": "Soft vanilla sponge filled with our signature European-style Biscoff pastry cream, giving a silky caramelized cookie flavor in every bite. Finished with Lotus cookie crumble and Biscoff drizzle. Smooth, rich, addictive.",
+        "price": "$11.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/sx8rvolme7pg5zvhsy9r"
       }
     ],
     "CAKES (SLICE & WHOLE)": [
@@ -48,16 +78,16 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/g24sjgtjzeh30dg9omck"
       },
       {
-        "name": "Biscoff Lotus Cake – Slice",
-        "desc": "Soft vanilla sponge filled with our signature European-style Biscoff pastry cream, giving a silky caramelized cookie flavor in every bite. Finished with Lotus cookie crumble and Biscoff drizzle. Smooth, rich, addictive.",
-        "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/sx8rvolme7pg5zvhsy9r"
-      },
-      {
         "name": "Carrot Cake – Slice",
         "desc": "Moist, warmly spiced carrot sponge (cinnamon + nutmeg) layered with our cream-cheese European-style pastry cream, creating a velvety, lighter twist on traditional carrot cake frosting. Balanced sweetness, rich flavor, and baked fresh daily.",
         "price": "$11.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/cqkq4rln9z82mvtngzbu"
+      },
+      {
+        "name": "Chocolate Fudge Cake – Slice",
+        "desc": "Moist chocolate sponge filled with our signature European-style chocolate pastry cream, giving it a velvety, mousse-like texture with deep cocoa flavor. Smooth, decadent, and baked fresh in-house daily.",
+        "price": "$11.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/vmgmw62btqtliq9u0iex"
       },
       {
         "name": "Classic Vanilla Cake– Slice",
@@ -76,12 +106,6 @@
         "desc": "Light vanilla sponge layered with fresh strawberries and our signature European-style whipped pastry cream, creating a silky, refreshing, fruit-forward dessert. Perfect balance of creaminess and natural strawberry sweetness.",
         "price": "$11.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/ux8hb4uiy5ptt2z0vuoy"
-      },
-      {
-        "name": "Trilece – Slice",
-        "desc": "Ultra-soft airy sponge soaked in a three-milk blend and topped with our signature European-style whipped pastry cream, then finished with a silky caramel glaze. Moist, light, creamy, and one of our bestselling traditional European desserts — made fresh in-house.",
-        "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rwk2fevwiks9jkxy80oj"
       },
       {
         "name": "Biscoff Lotus Cake – Whole (8\")",
@@ -138,12 +162,6 @@
         "img": ""
       },
       {
-        "name": "Cinnamon Roll (Cream Cheese Frosting)",
-        "desc": "Fluffy cinnamon roll baked with brown sugar cinnamon filling and finished with house-made cream cheese frosting.",
-        "price": "$5.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/nkw2qayykqeagz2z5dq1"
-      },
-      {
         "name": "Ham & Swiss Croissant",
         "desc": "Premium sliced ham and melted Swiss cheese tucked into a buttery croissant. Warm, filling, and perfect for breakfast.",
         "price": "$5.00",
@@ -154,20 +172,6 @@
         "desc": "",
         "price": "$3.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/lhehll5jiw4zfdhqrdko"
-      }
-    ],
-    "BREAKFAST PASTRIES": [
-      {
-        "name": "Chocolate Croissant (Pain Au Chocolat)",
-        "desc": "Classic French pain au chocolat baked golden, wrapped around premium dark chocolate batons that melt into soft layers.",
-        "price": "$5.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/fdtgbz7f4divdumwilvs"
-      },
-      {
-        "name": "Cheese Danish",
-        "desc": "Golden Danish pastry filled with smooth, lightly sweetened cream cheese. Buttery, creamy, and perfectly balanced",
-        "price": "$5.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/wocfxzd7ftwnx5i7u3rc"
       },
       {
         "name": "Banana Bread",
@@ -180,12 +184,14 @@
         "desc": "Flaky, buttery French croissant baked fresh daily.",
         "price": "$5.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zi6uodo16gmkn9yyd8qs"
-      },
+      }
+    ],
+    "BREAKFAST PASTRIES": [
       {
-        "name": "Profiteroles",
-        "desc": "Cream puff decorated with rich chocolate sauce",
-        "price": "$9.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/inae3ifjh8pzqg9pdu32"
+        "name": "Cheese Danish",
+        "desc": "Golden Danish pastry filled with smooth, lightly sweetened cream cheese. Buttery, creamy, and perfectly balanced",
+        "price": "$5.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/wocfxzd7ftwnx5i7u3rc"
       },
       {
         "name": "Fruit Tart (5)",
@@ -204,12 +210,6 @@
         "desc": "Rich, creamy chocolate bars crafted with premium ingredients, offering a smooth and decadent treat.",
         "price": "$17.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/jvddovatnnkghlcpoqqe"
-      },
-      {
-        "name": "Macarons (4)",
-        "desc": "",
-        "price": "$11.99",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/odtgylqvknbladgxsf3p"
       },
       {
         "name": "New York Cheesecake – Whole (8″)",
@@ -252,15 +252,33 @@
         "desc": "",
         "price": "$1.50",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/yekmqv2lslc6k4taev0i"
+      },
+      {
+        "name": "Turkish Tea",
+        "desc": "Freshly brewed Turkish black tea",
+        "price": "$5.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/te8hjxxjqkwt8jsctth3"
+      },
+      {
+        "name": "Turkish Coffee",
+        "desc": "Strong coffee with a thick layer of ground coffee at the bottom, served in a small cup.",
+        "price": "$5.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/d7liyh4etau1dshc9kbe"
+      },
+      {
+        "name": "Hot Chocolate",
+        "desc": "Rich chocolate drink with steamed milk, topped with whipped cream and a sprinkle of cocoa powder.",
+        "price": "$6.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zhenxcmqiacdzc1ylizo"
+      },
+      {
+        "name": "Dr Pepper (Can)",
+        "desc": "",
+        "price": "$4.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/m8ecv4huezhrmonsukeq"
       }
     ],
     "SIGNATURE DESSERT CUPS & MINI TREATS": [
-      {
-        "name": "Banana Pudding",
-        "desc": "A rich, dreamy banana pudding made the NYC way – layered with fresh banana slices, fluffy vanilla pudding, and crispy vanilla wafers. Handcrafted in small batches. Served chilled. Limited daily quantity – always fresh!",
-        "price": "$11.95",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zfn7bom8lfh1bklk9rxg"
-      },
       {
         "name": "Brownie",
         "desc": "Rich chocolate square with a fudgy interior and a slightly crisp top.",
@@ -294,30 +312,6 @@
         "desc": "",
         "price": "$2.50",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/to6wvjnndecpdeo7quoc"
-      },
-      {
-        "name": "Turkish Tea",
-        "desc": "Freshly brewed Turkish black tea",
-        "price": "$5.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/te8hjxxjqkwt8jsctth3"
-      },
-      {
-        "name": "Turkish Coffee",
-        "desc": "Strong coffee with a thick layer of ground coffee at the bottom, served in a small cup.",
-        "price": "$5.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/d7liyh4etau1dshc9kbe"
-      },
-      {
-        "name": "Hot Chocolate",
-        "desc": "Rich chocolate drink with steamed milk, topped with whipped cream and a sprinkle of cocoa powder.",
-        "price": "$6.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zhenxcmqiacdzc1ylizo"
-      },
-      {
-        "name": "Dr Pepper (Can)",
-        "desc": "",
-        "price": "$4.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/m8ecv4huezhrmonsukeq"
       },
       {
         "name": "Canary Dry (Can)",
@@ -432,12 +426,6 @@
         "desc": "Starting at $55. Pricing varies based on size, color theme, and decoration. Graduation cakes are available for in-store or phone ordering only. A celebratory graduation cake customizable with school colors, graduation year, and simple toppers. Available in any flavor. Perfect for class parties, ceremonies, and family celebrations.",
         "price": "$55.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/akdcvdfppuy4nwfaznpu"
-      },
-      {
-        "name": "Pistachio Baklava (4 pcs)",
-        "desc": "Layered pastry with finely chopped pistachios and sweet syrup, served as four pieces",
-        "price": "$9.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/z1w9avapv1kcmuv2qkt3"
       },
       {
         "name": "Walnut Baklava (4 pcs)",
