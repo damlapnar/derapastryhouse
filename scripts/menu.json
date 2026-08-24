@@ -1,13 +1,13 @@
 {
-  "scraped_at": "2026-08-17T08:36:42.256Z",
-  "total": 82,
+  "scraped_at": "2026-08-24T08:40:59.631Z",
+  "total": 80,
   "categories": {
     "BEST SELLERS": [
       {
-        "name": "Pistachio Baklava (4 pcs)",
-        "desc": "Layered pastry with finely chopped pistachios and sweet syrup, served as four pieces",
-        "price": "$9.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/z1w9avapv1kcmuv2qkt3"
+        "name": "Chocolate Éclair (2)",
+        "desc": "Light and airy choux pastry filled with our signature European-style pastry cream and topped with silky chocolate glaze. A classic, elegant dessert.",
+        "price": "$6.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/wsckxrz2oemwctq1vkjw"
       },
       {
         "name": "Macarons (4)",
@@ -16,10 +16,10 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/odtgylqvknbladgxsf3p"
       },
       {
-        "name": "Chocolate Éclair (2)",
-        "desc": "Light and airy choux pastry filled with our signature European-style pastry cream and topped with silky chocolate glaze. A classic, elegant dessert.",
-        "price": "$6.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/wsckxrz2oemwctq1vkjw"
+        "name": "Profiteroles",
+        "desc": "Cream puff decorated with rich chocolate sauce",
+        "price": "$9.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/inae3ifjh8pzqg9pdu32"
       },
       {
         "name": "Strawberry Cheesecake – Slice",
@@ -28,16 +28,22 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/jljbfkm5nvagot0gflmi"
       },
       {
-        "name": "Chocolate Croissant (Pain Au Chocolat)",
-        "desc": "Classic French pain au chocolat baked golden, wrapped around premium dark chocolate batons that melt into soft layers.",
-        "price": "$5.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/fdtgbz7f4divdumwilvs"
-      },
-      {
         "name": "Trilece – Slice",
         "desc": "Ultra-soft airy sponge soaked in a three-milk blend and topped with our signature European-style whipped pastry cream, then finished with a silky caramel glaze. Moist, light, creamy, and one of our bestselling traditional European desserts — made fresh in-house.",
         "price": "$11.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rwk2fevwiks9jkxy80oj"
+      },
+      {
+        "name": "Chocolate Fudge Cake – Slice",
+        "desc": "Moist chocolate sponge filled with our signature European-style chocolate pastry cream, giving it a velvety, mousse-like texture with deep cocoa flavor. Smooth, decadent, and baked fresh in-house daily.",
+        "price": "$11.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/vmgmw62btqtliq9u0iex"
+      },
+      {
+        "name": "Strawberry Shortcake – Slice",
+        "desc": "Light vanilla sponge layered with fresh strawberries and our signature European-style whipped pastry cream, creating a silky, refreshing, fruit-forward dessert. Perfect balance of creaminess and natural strawberry sweetness.",
+        "price": "$11.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/ux8hb4uiy5ptt2z0vuoy"
       },
       {
         "name": "Banana Pudding",
@@ -46,16 +52,16 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zfn7bom8lfh1bklk9rxg"
       },
       {
+        "name": "Brownie",
+        "desc": "Rich chocolate square with a fudgy interior and a slightly crisp top.",
+        "price": "$8.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zoz5tfzyoz0eiksavx02"
+      },
+      {
         "name": "Almond Croissant",
         "desc": "Buttery laminated croissant filled with rich house-made almond frangipane and finished with golden toasted almonds. Slightly sweet and aromatic.",
         "price": "$5.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/bqxu8cljcvuzmmuaftrj"
-      },
-      {
-        "name": "Chocolate Chip Cookie",
-        "desc": "Rich chocolate chunks in a classic, chewy cookie.",
-        "price": "$4.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/cylajmd3nabbnnnfhidi"
       },
       {
         "name": "Spinach & Feta Puff",
@@ -84,12 +90,6 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/cqkq4rln9z82mvtngzbu"
       },
       {
-        "name": "Chocolate Fudge Cake – Slice",
-        "desc": "Moist chocolate sponge filled with our signature European-style chocolate pastry cream, giving it a velvety, mousse-like texture with deep cocoa flavor. Smooth, decadent, and baked fresh in-house daily.",
-        "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/vmgmw62btqtliq9u0iex"
-      },
-      {
         "name": "Classic Vanilla Cake– Slice",
         "desc": "Soft vanilla sponge layered with our signature European-style vanilla pastry cream, creating an ultra-smooth and delicate flavor. Light, silky, and baked fresh in-house daily.",
         "price": "$11.00",
@@ -100,12 +100,6 @@
         "desc": "Classic red velvet cake layered with our cream-cheese–infused European-style pastry cream, which creates a lighter, silkier, and more luxurious version of traditional cream cheese frosting. Soft cocoa notes and velvety texture make this a customer favorite.",
         "price": "$11.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/e8e5kxwmq7jyjwcghz9k"
-      },
-      {
-        "name": "Strawberry Shortcake – Slice",
-        "desc": "Light vanilla sponge layered with fresh strawberries and our signature European-style whipped pastry cream, creating a silky, refreshing, fruit-forward dessert. Perfect balance of creaminess and natural strawberry sweetness.",
-        "price": "$11.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/ux8hb4uiy5ptt2z0vuoy"
       },
       {
         "name": "Biscoff Lotus Cake – Whole (8\")",
@@ -187,6 +181,12 @@
       }
     ],
     "BREAKFAST PASTRIES": [
+      {
+        "name": "Chocolate Croissant (Pain Au Chocolat)",
+        "desc": "Classic French pain au chocolat baked golden, wrapped around premium dark chocolate batons that melt into soft layers.",
+        "price": "$5.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/fdtgbz7f4divdumwilvs"
+      },
       {
         "name": "Cheese Danish",
         "desc": "Golden Danish pastry filled with smooth, lightly sweetened cream cheese. Buttery, creamy, and perfectly balanced",
@@ -278,14 +278,6 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/m8ecv4huezhrmonsukeq"
       }
     ],
-    "SIGNATURE DESSERT CUPS & MINI TREATS": [
-      {
-        "name": "Brownie",
-        "desc": "Rich chocolate square with a fudgy interior and a slightly crisp top.",
-        "price": "$8.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/zoz5tfzyoz0eiksavx02"
-      }
-    ],
     "CHEESECAKES": [
       {
         "name": "Oreo Cheesecake – Slice",
@@ -350,24 +342,6 @@
         "img": ""
       },
       {
-        "name": "Nutella Swirl Cupcake",
-        "desc": "Chocolate-hazelnut cupcake swirled with Nutella and topped with our Nutella-infused European-style pastry cream, creating the smoothest, richest Nutella frosting possible. A bestseller.",
-        "price": "$4.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/n1cm0ccrqj8pjeym3gzy"
-      },
-      {
-        "name": "Vanilla Bean Cupcake",
-        "desc": "Soft vanilla sponge topped with our signature European-style vanilla pastry cream, whipped into a silky buttercream-like texture. Light, elegant, and aromatic, a classic elevated to a luxury level.",
-        "price": "$4.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rdo8mwjyds4zcyzfuiaw"
-      },
-      {
-        "name": "Cookie Box (8-pack)",
-        "desc": "An assortment of eight cookies featuring chocolate chip",
-        "price": "$30.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/sdk1eoclrzht7vji8yqt"
-      },
-      {
         "name": "Office Celebration Cake – Corporate Friendly",
         "desc": "Starting at $55. Pricing varies based on design, size, and theme. Office celebration cakes are available for in-store or phone ordering only. A clean, elegant cake ideal for office events, retirements, promotions, team celebrations, or corporate gatherings. Designs can be kept simple and classic or customized to match company colors.",
         "price": "$55.00",
@@ -390,6 +364,18 @@
         "desc": "Starting at $55. Pricing varies based on size, flavor, and decoration. Custom baby shower cakes are available for in-store or phone ordering only. A sweet and elegant baby shower cake available in pink, blue, beige, cream, or any neutral color palette. Choose from soft cloud-style piping, simple fondant accents, or modern minimalist designs. Perfect for celebrating the arrival of your little one.",
         "price": "$55.00",
         "img": ""
+      },
+      {
+        "name": "Pistachio Baklava (4 pcs)",
+        "desc": "Layered pastry with finely chopped pistachios and sweet syrup, served as four pieces",
+        "price": "$9.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/z1w9avapv1kcmuv2qkt3"
+      },
+      {
+        "name": "Walnut Baklava (4 pcs)",
+        "desc": "Layers of phyllo dough, honey, and walnuts. Four pieces per serving.",
+        "price": "$9.50",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/pxofrtrpj3jz7vtwlan1"
       }
     ],
     "CUPCAKES": [
@@ -400,10 +386,10 @@
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/u1luogwiguso5idbvqef"
       },
       {
-        "name": "Carrot Cake Cupcake",
-        "desc": "Spiced carrot sponge topped with our cream-cheese European-style pastry cream, giving a velvety, lighter twist to traditional carrot cake frosting. Warm spices and creamy finish",
+        "name": "Vanilla Bean Cupcake",
+        "desc": "Soft vanilla sponge topped with our signature European-style vanilla pastry cream, whipped into a silky buttercream-like texture. Light, elegant, and aromatic, a classic elevated to a luxury level.",
         "price": "$4.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/tk4v9bydihebdcxtro5g"
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/rdo8mwjyds4zcyzfuiaw"
       }
     ],
     "COOKIES": [
@@ -412,6 +398,12 @@
         "desc": "Soft cookie with chunks of sweet white chocolate.",
         "price": "$4.50",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/uojcui9bykdyhbzcy64r"
+      },
+      {
+        "name": "Cookie Box (8-pack)",
+        "desc": "An assortment of eight cookies featuring chocolate chip",
+        "price": "$30.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/sdk1eoclrzht7vji8yqt"
       }
     ],
     "SPECIAL DAY ORDERS": [
@@ -426,24 +418,6 @@
         "desc": "Starting at $55. Pricing varies based on size, color theme, and decoration. Graduation cakes are available for in-store or phone ordering only. A celebratory graduation cake customizable with school colors, graduation year, and simple toppers. Available in any flavor. Perfect for class parties, ceremonies, and family celebrations.",
         "price": "$55.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/akdcvdfppuy4nwfaznpu"
-      },
-      {
-        "name": "Walnut Baklava (4 pcs)",
-        "desc": "Layers of phyllo dough, honey, and walnuts. Four pieces per serving.",
-        "price": "$9.50",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/pxofrtrpj3jz7vtwlan1"
-      },
-      {
-        "name": "Wedding Cake – Two Tier",
-        "desc": "Starting at $160. Price varies based on tier size, flavor selection, and design. Two-tier wedding cakes are available for in-store or phone consultation only. An elegant two-tier cake crafted with premium layers and our signature pastry cream. Customize with soft florals, pearls, smooth edges, or modern pastel tones.",
-        "price": "$160.00",
-        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/ickwlevoisparievygz8"
-      },
-      {
-        "name": "Custom Gift Sets",
-        "desc": "Beautifully curated gift sets customized for any occasion birthdays, anniversaries, baby showers, graduations, thank-you gifts, holidays, corporate events, and more. Each box is fully adjustable: choose your preferred treats, colors, themes, and size. Perfect for last-minute gifting. Customization and pricing vary by selection.",
-        "price": "$0.00",
-        "img": ""
       }
     ],
     "BAKLAVA": [
@@ -466,6 +440,18 @@
         "desc": "",
         "price": "$9.00",
         "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/pgsug31hj4mxrvftwsyn"
+      },
+      {
+        "name": "Wedding Cake – Two Tier",
+        "desc": "Starting at $160. Price varies based on tier size, flavor selection, and design. Two-tier wedding cakes are available for in-store or phone consultation only. An elegant two-tier cake crafted with premium layers and our signature pastry cream. Customize with soft florals, pearls, smooth edges, or modern pastel tones.",
+        "price": "$160.00",
+        "img": "https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/ickwlevoisparievygz8"
+      },
+      {
+        "name": "Custom Gift Sets",
+        "desc": "Beautifully curated gift sets customized for any occasion birthdays, anniversaries, baby showers, graduations, thank-you gifts, holidays, corporate events, and more. Each box is fully adjustable: choose your preferred treats, colors, themes, and size. Perfect for last-minute gifting. Customization and pricing vary by selection.",
+        "price": "$0.00",
+        "img": ""
       }
     ],
     "WEDDING ORDERS": [
