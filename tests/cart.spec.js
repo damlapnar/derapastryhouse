@@ -139,7 +139,8 @@ test.describe('Cart — Negative Cases', () => {
     const modal = page.locator('#dera-checkout-modal');
     // Fill email but not name
     await modal.locator('input[name="email"]').fill('test@example.com');
-    await modal.locator('input[name="Pickup"]').fill('Tomorrow at 3pm');
+    // #co-pickup is type="datetime-local" — free text is rejected as malformed.
+    await modal.locator('input[name="Pickup"]').fill('2026-12-24T15:00');
 
     // Submit form - browser validation should block it
     const nameInput = modal.locator('input[name="name"]');
@@ -237,7 +238,9 @@ test.describe('Cart — Edge Cases', () => {
     await expect(firstAction.locator('.card-stepper')).toBeHidden();
   });
 
-  test('Cart icon in nav is immediately right of Order Now link', async ({ page }) => {
+  test('Cart icon in nav is immediately right of Order Now link', async ({ page }, testInfo) => {
+    // Desktop-only: the "Order Now" CTA is hidden in the mobile header.
+    test.skip((testInfo.project.use.viewport?.width ?? 1280) <= 768, 'desktop nav only');
     const nav = page.locator('.nav-container');
     const orderNow = nav.locator('a.cta');
     const cartBtn = nav.locator('.cart-nav-btn');

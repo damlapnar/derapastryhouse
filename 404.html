@@ -112,7 +112,9 @@
     <div class="mobile-drawer__ctaWrap"><a class="mobile-drawer__cta" href="https://www.grubhub.com/restaurant/dera-pastry-house-1076-main-ave-clifton/12091408" target="_blank" rel="noopener noreferrer">Order Now</a></div>
   </aside>
   <script>(function(){const t=document.querySelector('.menu-toggle'),c=document.querySelectorAll('[data-drawer-close]');if(!t)return;function o(){document.body.classList.add('menu-open');t.setAttribute('aria-expanded','true');}function cl(){document.body.classList.remove('menu-open');t.setAttribute('aria-expanded','false');}t.addEventListener('click',()=>document.body.classList.contains('menu-open')?cl():o());c.forEach(el=>el.addEventListener('click',cl));document.addEventListener('keydown',(e)=>{if(e.key==='Escape')cl();});})();</script>
-  <a href="https://wa.me/12019239776" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" loading="lazy"></a>
+  <!-- Contact float button is injected by cart.js on every page (see dffc0b7);
+       the old standalone .whatsapp-float lived on here only, was never styled
+       in styles.min.css, and hotlinked its icon from Wikimedia. -->
   <script src="animations.min.js"></script>
   <script src="cart.js?v=5"></script>
 </body>

@@ -9,6 +9,11 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Allows other workflows (sync-menu.yml) to deploy. Pushes made with the
+  # default GITHUB_TOKEN do NOT trigger the `push` event above, so the weekly
+  # menu bot's commits were never being published without this.
+  workflow_call:
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
