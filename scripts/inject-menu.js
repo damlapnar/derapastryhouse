@@ -126,9 +126,30 @@ function parsePrice(raw) {
   return m ? parseFloat(m[0]) : 0;
 }
 
+// GrubHub serves these through a Cloudinary-style path that carries the size
+// in the URL (.../w_600,q_auto:best,f_auto,c_fill,h_600/<id>), so the same
+// photo can be requested at any width. Cards render ~275px on desktop and
+// ~165px in the two-column mobile grid, and a 600px file was being shipped to
+// every one of them: 49 KB where 31 KB (or 22 KB) would do.
+const IMG_WIDTHS = [300, 400, 600];
+const IMG_INTRINSIC = 600;
+
+function imgVariant(url, width) {
+  return url.replace(/\/w_\d+,([^/]*?),h_\d+\//, `/w_${width},$1,h_${width}/`);
+}
+
+function imgSrcset(url) {
+  if (!/\/w_\d+,[^/]*,h_\d+\//.test(url)) return '';
+  const set = IMG_WIDTHS.map(w => `${escapeHtml(imgVariant(url, w))} ${w}w`).join(', ');
+  return ` srcset="${set}" sizes="(max-width: 680px) 45vw, 275px"`;
+}
+
 function itemHtml(item) {
+  // width/height are the intrinsic ratio, not the rendered size. CSS already
+  // fixes the box (so there is no layout shift either way) — these are here so
+  // the ratio survives if that CSS ever changes or fails to load.
   const img = item.img
-    ? `<img src="${escapeHtml(item.img)}" alt="${escapeHtml(item.name)}" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img src="${escapeHtml(item.img)}"${imgSrcset(item.img)} alt="${escapeHtml(item.name)}" width="${IMG_INTRINSIC}" height="${IMG_INTRINSIC}" loading="lazy" decoding="async" onerror="this.style.display='none'">`
     : `<div class="menu-card-no-img">&#127856;</div>`;
   const desc = item.desc ? `<p>${escapeHtml(item.desc)}</p>` : '';
   const price = item.price ? `<span class="menu-card-price">${escapeHtml(item.price)}</span>` : '';
