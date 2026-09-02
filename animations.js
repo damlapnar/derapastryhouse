@@ -34,10 +34,21 @@
     const onScroll = () => nav.classList.toggle('nav-scrolled', window.scrollY > 40);
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
-    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    // Normalise both sides so clean URLs (/products), legacy .html URLs and
+    // the home page ("/" or "/index.html") all resolve to the same key.
+    const normalisePath = (p) => {
+      if (!p) return '';
+      const path = p.split('?')[0].split('#')[0];
+      const last = path.replace(/\/+$/, '').split('/').pop() || '';
+      return last.replace(/\.html$/, '').toLowerCase() || 'index';
+    };
+    const currentPage = normalisePath(window.location.pathname);
     document.querySelectorAll('.nav-container nav ul li a').forEach(link => {
-      const href = link.getAttribute('href');
-      if (href === currentPage || (currentPage === '' && href === 'index.html')) link.classList.add('nav-active');
+      const href = link.getAttribute('href') || '';
+      if (!/^(https?:|mailto:|tel:|sms:)/i.test(href) && normalisePath(href) === currentPage) {
+        link.classList.add('nav-active');
+        link.setAttribute('aria-current', 'page');
+      }
       link.classList.add('nav-link-anim');
     });
   }

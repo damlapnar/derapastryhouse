@@ -47,6 +47,7 @@
     .specials h2 { font-family:'Playfair Display',serif; color:#1c1c1c; font-size:clamp(1.5rem,4vw,2.2rem); margin-bottom:0.5rem; }
     .specials-sub { color:#666; margin-bottom:2.5rem; font-size:1rem; }
     .specials-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem; max-width:1100px; margin:0 auto; }
+    .specials-grid:focus-visible { outline:3px solid #F2C94C; outline-offset:4px; border-radius:8px; }
     .special-card { background:#fff; border-radius:16px; width:300px; box-shadow:0 4px 20px rgba(0,0,0,0.09); overflow:hidden; transition:transform 0.3s,box-shadow 0.3s; }
     .special-card:hover { transform:translateY(-6px); box-shadow:0 14px 36px rgba(0,0,0,0.14); }
     .special-card img { width:100%; height:220px; object-fit:cover; display:block; transition:transform 0.5s; }
@@ -339,7 +340,7 @@
     <section class="specials">
       <h2>What We're Known For</h2>
       <p class="specials-sub">A few things our regulars can't stop coming back for</p>
-      <div class="specials-grid">
+      <div class="specials-grid" tabindex="0" role="group" aria-label="What we're known for">
         <div class="special-card">
           <img src="https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_600,q_auto:best,f_auto,c_fill,h_600/igcgmv7qobv3jucburrm" alt="New York Style Cheesecake" loading="lazy">
           <div class="special-card-body">

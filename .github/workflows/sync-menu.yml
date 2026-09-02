@@ -2,7 +2,11 @@ name: GrubHub Menü Sync
 
 on:
   schedule:
-    - cron: '0 8 * * 1'  # Her Pazartesi 08:00 UTC (04:00 ET)
+    # Her Pazartesi 15:00 UTC = 11:00 ET (yazın) / 10:00 ET (kışın).
+    # Eski saat 08:00 UTC = 04:00 ET idi: dükkân 8:00–20:00 açık olduğu için
+    # scrape her hafta kapalı bir GrubHub sayfasında çalışıyordu ve GrubHub
+    # kapalı listelemede menüyü hiç render etmiyor.
+    - cron: '0 15 * * 1'
   workflow_dispatch:       # Manuel tetikleme butonu
 
 jobs:
@@ -10,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
 
     steps:
       - name: Repo'yu indir
@@ -41,13 +47,28 @@ jobs:
         run: node inject-menu.js
 
       - name: Değişiklik varsa commit et ve push yap
+        id: commit
         run: |
           git config user.name "Menu Bot"
           git config user.email "noreply@derapastryhouse.com"
           git add products.html scripts/menu.json
           if git diff --staged --quiet; then
             echo "Değişiklik yok, skip."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "Auto: GrubHub menüsü güncellendi ($(date -u '+%Y-%m-%d'))"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
+
+  # A push made with the default GITHUB_TOKEN does not fire the `push` event,
+  # so static.yml would never run for the bot's commits and the new menu would
+  # sit in the repo unpublished. Call the deploy workflow explicitly instead.
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.changed == 'true'
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    uses: ./.github/workflows/static.yml

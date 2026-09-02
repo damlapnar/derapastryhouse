@@ -1,26 +1,35 @@
 /* D'era House — Service Worker */
-const CACHE_NAME = 'dera-static-v6';
+const CACHE_NAME = 'dera-static-v7';
 const STATIC_ASSETS = [
   '/',
-  '/index.html',
-  '/products.html',
-  '/about.html',
-  '/locations.html',
-  '/contact.html',
-  '/gallery.html',
-  '/custom-order.html',
-  '/styles.min.css',
+  '/products',
+  '/about',
+  '/locations',
+  '/contact',
+  '/gallery',
+  '/custom-order',
+  '/policies',
+  '/styles.min.css?v=4',
   '/animations.min.css',
   '/animations.min.js',
-  '/cart.js',
+  '/cart.js?v=5',
   '/manifest.json',
   '/favicon.ico',
+  '/icon-192.png',
+  '/icon-512.png',
   '/404.html'
 ];
 
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then(cache => cache.addAll(STATIC_ASSETS)).then(() => self.skipWaiting())
+    caches.open(CACHE_NAME)
+      // addAll() is all-or-nothing: a single 404 (a renamed asset, a typo)
+      // aborts the whole install and leaves the site with no offline cache.
+      // Cache each entry independently instead.
+      .then(cache => Promise.all(
+        STATIC_ASSETS.map(url => cache.add(url).catch(() => {}))
+      ))
+      .then(() => self.skipWaiting())
   );
 });
 

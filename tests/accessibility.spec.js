@@ -20,7 +20,13 @@ async function runAxe(page) {
 
 for (const p of PAGES_TO_CHECK) {
   test(`Axe: ${p.name} has no critical WCAG violations`, async ({ page }) => {
+    // The scroll-reveal animation starts elements at opacity 0 and fades them
+    // in. Running axe mid-fade measures the blended colour and reports bogus
+    // contrast failures, so audit the settled page the way a reduced-motion
+    // user sees it (animations.min.css already reveals everything in that mode).
+    await page.emulateMedia({ reducedMotion: 'reduce' });
     await page.goto(p.path);
+    await page.evaluate(() => document.querySelectorAll('.reveal-ready').forEach(el => el.classList.add('revealed')));
     const results = await runAxe(page);
     const critical = results.violations.filter(v => v.impact === 'critical' || v.impact === 'serious');
     expect(

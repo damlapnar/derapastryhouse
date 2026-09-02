@@ -378,6 +378,17 @@ button:hover {
   font-size: 0.9rem;
   opacity: 0.9;
 }
+.footer-copy a {
+  color: #F5E9C8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-copy a:hover,
+.footer-copy a:focus-visible {
+  color: #ffffff;
+}
+
 
 /* =========================
    SPECIALS (HOME)

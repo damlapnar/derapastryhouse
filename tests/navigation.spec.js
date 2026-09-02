@@ -31,7 +31,10 @@ test.describe('Navigation — Happy Path', () => {
     await expect(page).toHaveURL(/\/(index\.html)?$/);
   });
 
-  test('"Order Now" CTA is present in desktop nav', async ({ page }) => {
+  test('"Order Now" CTA is present in desktop nav', async ({ page }, testInfo) => {
+    // Desktop-only: the header CTA is display:none below 768px by design, and
+    // the mobile behaviour has its own test ("...hidden from header on mobile").
+    test.skip((testInfo.project.use.viewport?.width ?? 1280) <= 768, 'desktop nav only');
     await page.goto('/');
     await expect(page.locator('.nav-container a.cta')).toBeVisible();
   });
